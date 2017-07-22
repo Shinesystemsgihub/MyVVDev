@@ -38,7 +38,7 @@ function debug_to_console( $data ) {
 function dynamic_menu() {
     if ( is_user_logged_in() ) {
         echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
-    } 
+    }
     else  { 
         echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
     }

@@ -8,7 +8,7 @@ class MyAccountPage extends PageBase {
     public function testMyAccount_Page_Allows_New_User_To_Register() {
         $this->webDriver->get(self::MY_ACCOUNT_URL);
 
-        $this->webDriver->findElement(WebDriverBy::id('reg_email'))->sendKeys('wxy@xz.com');
+        $this->webDriver->findElement(WebDriverBy::id('reg_email'))->sendKeys('e@z.com');
         $this->webDriver->findElement(WebDriverBy::name('register'))->click();
         
         try {
