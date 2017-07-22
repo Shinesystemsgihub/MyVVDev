@@ -1,0 +1,297 @@
+10-27-2016 @ 18:27:34 - Info: Begin processing payment for order 129 for the amount of 37
+10-27-2016 @ 18:27:35 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+10-27-2016 @ 18:27:50 - Info: Begin processing payment for order 129 for the amount of 37
+10-27-2016 @ 18:27:51 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+10-27-2016 @ 19:16:32 - Info: Begin processing payment for order 130 for the amount of 96
+10-27-2016 @ 19:16:32 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+12-02-2016 @ 15:25:19 - Info: Begin processing payment for order 667 for the amount of 25.25
+12-02-2016 @ 15:25:19 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+12-02-2016 @ 15:39:19 - Info: Begin processing payment for order 668 for the amount of 42.72
+12-02-2016 @ 15:39:20 - Success: Square charge authorized (Authorized ID: 92O9iKcJ2TDeBx4WZAw6JWueV). Process order to take payment, or cancel to remove the pre-authorization.
+12-02-2016 @ 15:41:41 - Info: Cancel payment for order 668
+02-07-2017 @ 22:40:18 - Info: Begin processing payment for order 880 for the amount of 46.55
+02-07-2017 @ 22:40:19 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+03-02-2017 @ 12:01:25 - Info: Begin processing payment for order 928 for the amount of 82.9
+03-02-2017 @ 12:01:27 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => VERIFY_AVS_FAILURE
+            [detail] => Postal code check failed.
+        )
+
+)
+
+03-02-2017 @ 12:02:25 - Info: Begin processing payment for order 929 for the amount of 226.08
+03-02-2017 @ 12:02:26 - Success: Square charge authorized (Authorized ID: zdaEUURLvLn0y3ZgtjflIigeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-02-2017 @ 12:03:35 - Info: Begin processing payment for order 928 for the amount of 82.9
+03-02-2017 @ 12:03:36 - Success: Square charge authorized (Authorized ID: 126yKeus5aDd1H0Ee29tpOmeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-02-2017 @ 14:23:17 - Info: Begin capture for order 929
+03-02-2017 @ 14:23:18 - Info: Capture successful for 929
+03-02-2017 @ 14:25:03 - Info: Begin capture for order 928
+03-02-2017 @ 14:25:04 - Info: Capture successful for 928
+03-03-2017 @ 01:12:57 - Info: Begin processing payment for order 934 for the amount of 60
+03-03-2017 @ 01:12:58 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+03-03-2017 @ 01:13:41 - Info: Begin processing payment for order 934 for the amount of 60
+03-03-2017 @ 01:13:41 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+03-03-2017 @ 01:15:18 - Info: Begin processing payment for order 934 for the amount of 60
+03-03-2017 @ 01:15:19 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => VERIFY_CVV_FAILURE
+            [detail] => Card verification code check failed.
+        )
+
+)
+
+03-03-2017 @ 09:27:35 - Info: Begin processing payment for order 934 for the amount of 60
+03-03-2017 @ 09:27:37 - Success: Square charge authorized (Authorized ID: tCQ33x2w9Ed8xumgHeRTqcpeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-03-2017 @ 10:11:50 - Info: Begin capture for order 934
+03-03-2017 @ 10:11:51 - Info: Capture successful for 934
+03-08-2017 @ 09:49:24 - Info: Begin processing payment for order 945 for the amount of 145.38
+03-08-2017 @ 09:49:25 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+03-08-2017 @ 09:56:19 - Info: Begin processing payment for order 946 for the amount of 61.75
+03-08-2017 @ 09:56:20 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => VERIFY_AVS_FAILURE
+            [detail] => Postal code check failed.
+        )
+
+)
+
+03-08-2017 @ 09:59:07 - Info: Begin processing payment for order 946 for the amount of 61.75
+03-08-2017 @ 09:59:08 - Success: Square charge authorized (Authorized ID: tUb8FRv5uEOVyB1pfeZoNioeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-08-2017 @ 10:22:02 - Info: Begin processing payment for order 947 for the amount of 170.44
+03-08-2017 @ 10:22:03 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+03-08-2017 @ 10:31:55 - Info: Begin processing payment for order 948 for the amount of 60
+03-08-2017 @ 10:31:56 - Success: Square charge authorized (Authorized ID: hYG1ANFaEqgxJ4BPQe9K23keV). Process order to take payment, or cancel to remove the pre-authorization.
+03-09-2017 @ 09:15:24 - Info: Begin processing payment for order 949 for the amount of 56.99
+03-09-2017 @ 09:15:26 - Success: Square charge authorized (Authorized ID: JqV3VDNyqD6jbloF5uN4s8oeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-09-2017 @ 11:32:36 - Info: Cancel payment for order 949
+03-09-2017 @ 11:32:54 - Info: Cancel payment for order 948
+03-09-2017 @ 11:34:34 - Info: Cancel payment for order 946
+03-09-2017 @ 11:39:51 - Info: Begin processing payment for order 950 for the amount of 177.64
+03-09-2017 @ 11:39:53 - Success: Square charge authorized (Authorized ID: ZeTt40FXthfBJ34zqTw2oB7eV). Process order to take payment, or cancel to remove the pre-authorization.
+03-12-2017 @ 20:41:05 - Info: Begin processing payment for order 952 for the amount of 150
+03-12-2017 @ 20:41:07 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => CARD_DECLINED
+            [detail] => Card declined.
+        )
+
+)
+
+03-12-2017 @ 20:42:11 - Info: Begin processing payment for order 952 for the amount of 150
+03-12-2017 @ 20:42:13 - Success: Square charge authorized (Authorized ID: HfWcGfm47TJXjxIk7Af3LUveV). Process order to take payment, or cancel to remove the pre-authorization.
+03-13-2017 @ 17:03:53 - Info: Begin capture for order 952
+03-13-2017 @ 17:03:54 - Info: Capture successful for 952
+03-13-2017 @ 17:12:34 - Info: Begin capture for order 952
+03-14-2017 @ 11:36:07 - Info: Begin processing payment for order 969 for the amount of 68.9
+03-14-2017 @ 11:36:10 - Success: Square charge authorized (Authorized ID: fdHq3jcUpF8Iw8X3X2VVfzoeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-14-2017 @ 12:49:33 - Info: Begin processing payment for order 971 for the amount of 88.86
+03-14-2017 @ 12:49:35 - Success: Square charge authorized (Authorized ID: vv6HkuTNg95xESXrEQ1D84peV). Process order to take payment, or cancel to remove the pre-authorization.
+03-15-2017 @ 08:52:21 - Info: Cancel payment for order 969
+03-15-2017 @ 09:40:33 - Info: Cancel payment for order 971
+03-15-2017 @ 10:06:56 - Info: Begin processing payment for order 974 for the amount of 287.66
+03-15-2017 @ 10:06:58 - Success: Square charge authorized (Authorized ID: tGsIpBMhde9xDnR533JpbYmeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-16-2017 @ 09:14:00 - Info: Begin processing payment for order 975 for the amount of 73.84
+03-16-2017 @ 09:14:02 - Success: Square charge authorized (Authorized ID: n1FemOx8qNN4C0BGx6hEVRmeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-16-2017 @ 09:24:40 - Info: Begin processing payment for order 976 for the amount of 119.83
+03-16-2017 @ 09:24:41 - Success: Square charge authorized (Authorized ID: 1GwnlaDgCkTANyMocLKeO7geV). Process order to take payment, or cancel to remove the pre-authorization.
+03-16-2017 @ 09:49:15 - Info: Begin processing payment for order 977 for the amount of 199.7
+03-16-2017 @ 09:49:18 - Success: Square charge authorized (Authorized ID: VAPucVUE4QnfJ4dpLevAEdjeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-16-2017 @ 10:20:59 - Info: Begin processing payment for order 978 for the amount of 119.59
+03-16-2017 @ 10:21:01 - Success: Square charge authorized (Authorized ID: 56hTtWnK7T5bQ7cXHZGGwQqeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-17-2017 @ 14:40:14 - Info: Begin processing payment for order 979 for the amount of 208.29
+03-17-2017 @ 14:40:16 - Success: Square charge authorized (Authorized ID: 7hE9CkU6JBa2wX2i3Y31vy3eV). Process order to take payment, or cancel to remove the pre-authorization.
+03-20-2017 @ 07:34:50 - Info: Cancel payment for order 978
+03-20-2017 @ 07:34:55 - Info: Cancel payment for order 977
+03-20-2017 @ 07:35:01 - Info: Cancel payment for order 976
+03-20-2017 @ 07:35:05 - Info: Cancel payment for order 975
+03-20-2017 @ 07:35:12 - Info: Cancel payment for order 974
+03-20-2017 @ 07:40:17 - Info: Cancel payment for order 979
+03-31-2017 @ 07:59:17 - Info: Begin processing payment for order 993 for the amount of 244.23
+03-31-2017 @ 07:59:20 - Success: Square charge authorized (Authorized ID: vHoq5kfUOlzi7K31iI7KkHgeV). Process order to take payment, or cancel to remove the pre-authorization.
+03-31-2017 @ 08:24:11 - Info: Cancel payment for order 993
+03-31-2017 @ 13:09:48 - Info: Begin processing payment for order 994 for the amount of 255.94
+03-31-2017 @ 13:09:51 - Success: Square charge authorized (Authorized ID: zbZIeGC7amHeDTzHQH3pa4yeV). Process order to take payment, or cancel to remove the pre-authorization.
+04-01-2017 @ 16:22:02 - Info: Begin processing payment for order 995 for the amount of 73.57
+04-01-2017 @ 16:22:04 - Success: Square charge authorized (Authorized ID: DPNpLOqqrWMrbdYAFaMhJVzeV). Process order to take payment, or cancel to remove the pre-authorization.
+04-05-2017 @ 11:20:38 - Info: Begin capture for order 994
+04-05-2017 @ 11:20:39 - Info: Capture successful for 994
+04-05-2017 @ 11:24:32 - Info: Cancel payment for order 995
+04-21-2017 @ 10:55:13 - Info: Begin processing payment for order 1772 for the amount of 42.11
+04-21-2017 @ 10:55:15 - Success: Square charge authorized (Authorized ID: X9ZG7AZST2FAbnzGHFMm0g4eV). Process order to take payment, or cancel to remove the pre-authorization.
+04-21-2017 @ 11:07:33 - Info: Begin processing payment for order 1773 for the amount of 46.59
+04-21-2017 @ 11:07:35 - Success: Square charge authorized (Authorized ID: bBKKZiaWtZNEQ3mGtwsDCymeV). Process order to take payment, or cancel to remove the pre-authorization.
+04-21-2017 @ 11:53:23 - Info: Begin capture for order 1772
+04-21-2017 @ 11:53:24 - Info: Capture successful for 1772
+04-21-2017 @ 12:15:49 - Info: Cancel payment for order 1773
+04-21-2017 @ 14:19:42 - Info: Begin processing payment for order 1774 for the amount of 42.69
+04-21-2017 @ 14:19:44 - Success: Square charge authorized (Authorized ID: FMP7hf6et9xIxv9t4gP8nsneV). Process order to take payment, or cancel to remove the pre-authorization.
+04-21-2017 @ 14:34:01 - Info: Cancel payment for order 1774
+04-25-2017 @ 09:00:40 - Info: Begin refund for order 1772 for the amount of 42.11
+04-25-2017 @ 09:00:42 - Success: Refunded $42.11 - Refund ID: jazvaTAyWIAwDAWlVRkE - Reason: 
+05-02-2017 @ 17:12:07 - Info: Begin processing payment for order 1828 for the amount of 205.75
+05-02-2017 @ 17:12:09 - Success: Square charge authorized (Authorized ID: tuA64Yco3ficvPrr7wXyqpfeV). Process order to take payment, or cancel to remove the pre-authorization.
+05-18-2017 @ 13:48:23 - Info: Begin processing payment for order 1920 for the amount of 40.00
+05-18-2017 @ 13:48:23 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => VERIFY_AVS_FAILURE
+            [detail] => Postal code check failed.
+        )
+
+)
+
+05-18-2017 @ 13:50:19 - Info: Begin processing payment for order 1920 for the amount of 40.00
+05-18-2017 @ 13:50:20 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => VERIFY_AVS_FAILURE
+            [detail] => Postal code check failed.
+        )
+
+)
+
+05-18-2017 @ 13:51:41 - Info: Begin processing payment for order 1920 for the amount of 40.00
+05-18-2017 @ 13:51:43 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => VERIFY_AVS_FAILURE
+            [detail] => Postal code check failed.
+        )
+
+)
+
+05-18-2017 @ 13:51:59 - Info: Begin processing payment for order 1920 for the amount of 40.00
+05-18-2017 @ 13:52:00 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => VERIFY_AVS_FAILURE
+            [detail] => Postal code check failed.
+        )
+
+)
+
+05-18-2017 @ 13:52:33 - Info: Begin processing payment for order 1920 for the amount of 40.00
+05-18-2017 @ 13:52:34 - Error: Array
+(
+    [0] => stdClass Object
+        (
+            [category] => PAYMENT_METHOD_ERROR
+            [code] => VERIFY_AVS_FAILURE
+            [detail] => Postal code check failed.
+        )
+
+)
+
+05-18-2017 @ 13:59:43 - Info: Begin processing payment for order 1920 for the amount of 40.00
+05-18-2017 @ 13:59:45 - Success: Square charge authorized (Authorized ID: PlHQcJx759If5YjnSGc8eY2eV). Process order to take payment, or cancel to remove the pre-authorization.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<undefined0><![CDATA[Whole, 1 Gallon ]]></undefined0>
+		<producttitle><![CDATA[Whole Milk]]></producttitle>
+		<price><![CDATA[$4.47]]></price>
+		<amount><![CDATA[]]></amount>
+		<inventory><![CDATA[]]></inventory>
+		<parentcategory><![CDATA[grocery]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Refrigerated]]></producttag>
+		<shortdescription><![CDATA[Store Brand ]]></shortdescription>
+		<meta><![CDATA[]]></meta>
+		<longdescription><![CDATA[Whole, 1 gallon ]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[https://pilot.myvacayvalet.com/wp-content/uploads/2016/11/fridge whole milk gallon.jpg]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[$3.69]]></walmartprice>
+		<shoppersvalue><![CDATA[$3.51]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+	</node>
+</data>

@@ -1,0 +1,15 @@
+fieldset:not(:first-of-type) {
+	display: none; 
+}
+#service_timeslot_field, #departure_timeslot_field, #vacation_status_field, #pre_arrival_field {
+	display: none;
+}
+.variations_form {
+	position: relative;
+	min-height:110px;
+}
+
+input.previous {
+    float:left;
+    margin-right:10px;
+}

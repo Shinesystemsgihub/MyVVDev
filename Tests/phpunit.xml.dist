@@ -1,0 +1,17 @@
+<phpunit
+  bootstrap="vendor/autoload.php"
+  colors="always"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  >
+
+  <testsuites>
+    <testsuite name="browser">
+      <directory>Browser/Tests</directory>
+    </testsuite>
+    <testsuite name="unit">
+      <directory>Unit</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

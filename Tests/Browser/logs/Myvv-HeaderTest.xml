@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Myvv\HeaderTest" file="/Users/jallen/Projects/myvv/Tests/Browser/tests/HeaderTest.php" tests="1" assertions="0" failures="0" errors="1" time="6.741537">
+    <testcase name="testOpensContactPage" class="Myvv\HeaderTest" file="/Users/jallen/Projects/myvv/Tests/Browser/tests/HeaderTest.php" line="20" assertions="0" time="6.741537">
+      <error type="Facebook\WebDriver\Exception\NoSuchElementException">Myvv\HeaderTest::testOpensContactPage
+Facebook\WebDriver\Exception\NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Contact Us"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477690 (c53f4ad87510ee97b5c3425a14c0e79780cdf262),platform=Mac OS X 10.12.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Jerrys-Air.fios-router.home', ip: 'fe80:0:0:0:1c70:d7e3:193d:37b7%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.5', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477690 (c53f4ad87510ee97b5c3425a14c0e79780cdf262), userDataDir=/var/folders/bg/vhwtskjj2693r9sj7my_0jn00000gn/T/.org.chromium.Chromium.3I3Jel}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: bcd1e75a3711db9d7b6438e43e92f2d6
+*** Element info: {Using=link text, value=Contact Us}
+
+/Users/jallen/Projects/myvv/Tests/Browser/vendor/facebook/webdriver/lib/Exception/WebDriverException.php:102
+/Users/jallen/Projects/myvv/Tests/Browser/vendor/facebook/webdriver/lib/Remote/HttpCommandExecutor.php:320
+/Users/jallen/Projects/myvv/Tests/Browser/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php:535
+/Users/jallen/Projects/myvv/Tests/Browser/vendor/lmc/steward/src/WebDriver/RemoteWebDriver.php:29
+/Users/jallen/Projects/myvv/Tests/Browser/vendor/facebook/webdriver/lib/Remote/RemoteWebDriver.php:175
+/Users/jallen/Projects/myvv/Tests/Browser/vendor/lmc/steward/src/Test/SyntaxSugarTrait.php:168
+/Users/jallen/Projects/myvv/Tests/Browser/tests/Pages/Header.php:22
+/Users/jallen/Projects/myvv/Tests/Browser/tests/HeaderTest.php:22
+</error>
+      <system-out>[2017-07-04 00:21:15]: Starting execution of test Myvv\HeaderTest::testOpensContactPage
+[2017-07-04 00:21:15]: [WebDriver] Executing command "setWindowSize" with params {"width":1024,"height":768,":windowHandle":"current"}
+[2017-07-04 00:21:15] [DEBUG]: Base URL set to "http://localhost:3000/"
+[2017-07-04 00:21:15]: [WebDriver] Loading URL "http://localhost:3000/"
+[2017-07-04 00:21:15]: [WebDriver] Executing command "get" with params {"url":"http://localhost:3000/"}
+[2017-07-04 00:21:21] [DEBUG]: [Header] Navigating to Contact Us page
+[2017-07-04 00:21:21]: [WebDriver] Executing command "findElement" with params {"using":"link text","value":"Contact Us"}
+[2017-07-04 00:21:22]: Finished execution of test Myvv\HeaderTest::testOpensContactPage
+[2017-07-04 00:21:22]: [WebDriver] Executing command "getCurrentUrl" with params []
+[2017-07-04 00:21:22]: [WebDriver] Executing command "screenshot" with params []
+[2017-07-04 00:21:22]: [WebDriver] Executing command "getPageSource" with params []
+[2017-07-04 00:21:22]: 
+[2017-07-04 00:21:22]: [WARN] Test failed on page "http://localhost:3000/", taking page snapshots:
+[2017-07-04 00:21:22]: Screenshot: "/Users/jallen/Projects/myvv/Tests/Browser/logs/Myvv-HeaderTest-testOpensContactPage-2017-07-04-00-21-22.png"
+[2017-07-04 00:21:22]: HTML snapshot: "/Users/jallen/Projects/myvv/Tests/Browser/logs/Myvv-HeaderTest-testOpensContactPage-2017-07-04-00-21-22.html"
+[2017-07-04 00:21:22]: 
+[2017-07-04 00:21:22]: Destroying "chrome" WebDriver for "Myvv\HeaderTest::testOpensContactPage" (session 28d12916-ecf3-4523-bfd3-fef71e514956)
+[2017-07-04 00:21:22]: [WebDriver] Executing command "close" with params []
+[2017-07-04 00:21:22]: [WebDriver] Executing command "quit" with params []
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,26 @@
+// Place your settings in this file to overwrite default and user settings.
+
+{
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/local/bin/php",
+    "php.validate.run": "onSave",
+
+    "php-project.automaticRestart": true,
+    "php-project.defaultDirectory": "${workspaceRoot}",
+    "php-project.launchOutputTemplate": "PHP server running with {{rootDir}} as root directory. Reach server using {{server}}",
+    "php-project.useNativeExecutablePath": true,
+
+    "phpunit.execPath": "vendor/bin/phpunit",
+    "phpunit.args": [
+        "--configuration", "Tests/phpunit.xml.dist"
+    ],
+    "git.ignoreLimitWarning": true,
+
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.inlineValues": true,
+    "debug.openExplorerOnEnd": true,
+    "debug.internalConsoleOptions": "openOnSessionStart",
+
+    "intelephense.debug.enable": true,
+    "composer.executablePath": "usr/local/bin/composer"
+}

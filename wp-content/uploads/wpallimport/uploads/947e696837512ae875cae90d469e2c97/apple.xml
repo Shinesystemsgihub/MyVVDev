@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<producttitle><![CDATA[Apple]]></producttitle>
+		<price><![CDATA[1.97]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[per pound]]></meta>
+		<longdescription><![CDATA[Apple, Fugi]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[https://pilot.myvacayvalet.com/wp-content/uploads/2016/11/fuji-apples.jpg]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.64]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+		<status><![CDATA[]]></status>
+	</node>
+</data>

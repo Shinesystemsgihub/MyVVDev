@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<undefined0><![CDATA[Whole, 1 Gallon ]]></undefined0>
+		<producttitle><![CDATA[Whole Milk]]></producttitle>
+		<price><![CDATA[4.47]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Refrigerated]]></producttag>
+		<shortdescription><![CDATA[Store Brand ]]></shortdescription>
+		<meta><![CDATA[]]></meta>
+		<longdescription><![CDATA[Whole, 1 gallon ]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[https://pilot.myvacayvalet.com/wp-content/uploads/2016/11/fridge-whole-milk-gallon.jpg]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[3.69]]></walmartprice>
+		<shoppersvalue><![CDATA[3.51]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[Potatoes]]></undefined0>
+		<producttitle><![CDATA[Russet Potatoes]]></producttitle>
+		<price><![CDATA[1.07]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[per pound]]></meta>
+		<longdescription><![CDATA[russet, each]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[https://pilot.myvacayvalet.com/wp-content/uploads/2016/11/single-potato.jpg]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[0.88]]></walmartprice>
+		<shoppersvalue><![CDATA[0.59]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[Garlic]]></undefined0>
+		<producttitle><![CDATA[Garlic Cloves]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[2 bulbs]]></meta>
+		<longdescription><![CDATA[Garlic bulbs, Fresh World]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[0.61]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Lemons]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[each]]></meta>
+		<longdescription><![CDATA[lemon]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[0.56]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Lime]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[each]]></meta>
+		<longdescription><![CDATA[lime]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[0.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Apple]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[per pound]]></meta>
+		<longdescription><![CDATA[Apple, Fugi]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.64]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Broccoli]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[per pound]]></meta>
+		<longdescription><![CDATA[Broccoli, crown]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.95]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Salad]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[6 oz]]></meta>
+		<longdescription><![CDATA[Salad mix, 5 lettuce]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.73]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Salad]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Produce]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[11 oz]]></meta>
+		<longdescription><![CDATA[salad mix, veggie lovers]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.73]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Crackers]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[7 oz]]></meta>
+		<longdescription><![CDATA[Crackers, Cheez-It]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.24]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Crackers]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[16 oz]]></meta>
+		<longdescription><![CDATA[crackers, saltines, Nabisco]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.07]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Crackers]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[16 oz]]></meta>
+		<longdescription><![CDATA[crackers, saltines, store brand]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Crackers]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[13.7 oz]]></meta>
+		<longdescription><![CDATA[crackers, Ritz]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.85]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Crackers]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[9.1 oz]]></meta>
+		<longdescription><![CDATA[crackers, Wheat Thins, original]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.56]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Crackers]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[9 oz]]></meta>
+		<longdescription><![CDATA[crackers, Triscuits, original]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.56]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Crackers]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[14.4 oz]]></meta>
+		<longdescription><![CDATA[crackers, Honey Made graham]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.03]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Crackers]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[14.4 oz]]></meta>
+		<longdescription><![CDATA[crackers, store brand graham]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.82]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Marshmallows]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[10 oz]]></meta>
+		<longdescription><![CDATA[marshmallow, Campfire]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.33]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Marshmallows]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[10 oz]]></meta>
+		<longdescription><![CDATA[marshmallow, store brand]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[0.81]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Chocolate Bars]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Hershey's ]]></shortdescription>
+		<meta><![CDATA[6-pack, 9.3 oz]]></meta>
+		<longdescription><![CDATA[Chocolate bars]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.69]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Turkey Hill]]></shortdescription>
+		<meta><![CDATA[48 oz]]></meta>
+		<longdescription><![CDATA[Homemade Vanilla]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.88]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Turkey Hill]]></shortdescription>
+		<meta><![CDATA[48 oz]]></meta>
+		<longdescription><![CDATA[Chocolate]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.88]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Turkey Hill]]></shortdescription>
+		<meta><![CDATA[48 oz]]></meta>
+		<longdescription><![CDATA[Butter Pecan]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.88]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Turkey Hill]]></shortdescription>
+		<meta><![CDATA[48 oz]]></meta>
+		<longdescription><![CDATA[Cookies & Cream]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.88]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Turkey Hill]]></shortdescription>
+		<meta><![CDATA[48 oz]]></meta>
+		<longdescription><![CDATA[Black Cherry]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.88]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Turkey Hill]]></shortdescription>
+		<meta><![CDATA[48 oz]]></meta>
+		<longdescription><![CDATA[Rocky Road]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.88]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Turkey Hill]]></shortdescription>
+		<meta><![CDATA[48 oz]]></meta>
+		<longdescription><![CDATA[Chocolate Mint Chip]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.88]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[child]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Popsicle]]></shortdescription>
+		<meta><![CDATA[20 pk]]></meta>
+		<longdescription><![CDATA[Rainbow flavors]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.1]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ice Cream]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[child]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Fun Pops]]></shortdescription>
+		<meta><![CDATA[12 pk]]></meta>
+		<longdescription><![CDATA[variety flavor ices]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.2]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Charcoal]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Other]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Kingsford]]></shortdescription>
+		<meta><![CDATA[11.6 lb]]></meta>
+		<longdescription><![CDATA[Charcoal, Matchlight]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[11.32]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Lighter Fluid]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Other]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Kingsford]]></shortdescription>
+		<meta><![CDATA[1 qt]]></meta>
+		<longdescription><![CDATA[Lighter fluid]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.26]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Lighter Fluid]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Other]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Store Brand ]]></shortdescription>
+		<meta><![CDATA[1 qt]]></meta>
+		<longdescription><![CDATA[Lighter fluid]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.29]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Fire Pit Wood]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Other]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Store Brand ]]></shortdescription>
+		<meta><![CDATA[bundle]]></meta>
+		<longdescription><![CDATA[Fire Wood]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.06]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ibuprofen]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Medicines, adult]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Advil]]></shortdescription>
+		<meta><![CDATA[24 ct]]></meta>
+		<longdescription><![CDATA[Ibuprofen, coated tablets]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.55]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ibuprofen]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Medicines, adult]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Store Brand ]]></shortdescription>
+		<meta><![CDATA[100 ct]]></meta>
+		<longdescription><![CDATA[Ibuprofen, coated tablets]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.43]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[acetaminophen]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Medicines, adult]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Tylenol]]></shortdescription>
+		<meta><![CDATA[24 ct]]></meta>
+		<longdescription><![CDATA[Acetaminophen, Extra Strength]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.29]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[acetaminophen]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Medicines, adult]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Store Brand ]]></shortdescription>
+		<meta><![CDATA[24 ct]]></meta>
+		<longdescription><![CDATA[Acetaminophen, Extra Strength]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[0.9]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Allergy Relief]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Medicines, adult]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Benadryl]]></shortdescription>
+		<meta><![CDATA[24 ct]]></meta>
+		<longdescription><![CDATA[Allergy Relief]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[5.39]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Allergy Relief]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Medicines, adult]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Store Brand ]]></shortdescription>
+		<meta><![CDATA[14 ct]]></meta>
+		<longdescription><![CDATA[Allergy Relief (compared to Zyrtec)]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.29]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Formula]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Baby]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Similac]]></shortdescription>
+		<meta><![CDATA[12 oz]]></meta>
+		<longdescription><![CDATA[Baby Formula, Sensitive]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[19.87]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cookies]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Nabisco]]></shortdescription>
+		<meta><![CDATA[14.3 oz]]></meta>
+		<longdescription><![CDATA[Cookies, Oreo]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.33]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cookies]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Nabisco]]></shortdescription>
+		<meta><![CDATA[11.75 oz]]></meta>
+		<longdescription><![CDATA[Cookies, Chips Ahoy, Chunky]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.65]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cookies]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Nabisco]]></shortdescription>
+		<meta><![CDATA[16 oz]]></meta>
+		<longdescription><![CDATA[Cookies, Nutter Butter]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.51]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cookies]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Nabisco]]></shortdescription>
+		<meta><![CDATA[11 oz]]></meta>
+		<longdescription><![CDATA[Cookies, Nilla Wafers]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.03]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Brownies]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Pillsbury]]></shortdescription>
+		<meta><![CDATA[13 x 9]]></meta>
+		<longdescription><![CDATA[Brownies, chocolate fudge]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.53]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Brownies]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Pillsbury]]></shortdescription>
+		<meta><![CDATA[13 x 9]]></meta>
+		<longdescription><![CDATA[Brownies, milk chocolate]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.53]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Bread]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[bread]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Rudi's]]></shortdescription>
+		<meta><![CDATA[12 oz]]></meta>
+		<longdescription><![CDATA[Bread, gluten-free, original]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[5.46]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Bread]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[bread]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Rudi's]]></shortdescription>
+		<meta><![CDATA[13 oz]]></meta>
+		<longdescription><![CDATA[bread, gluten-free, multigrian]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[5.46]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Muffins]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[bread]]></subcategory>
+		<producttag><![CDATA[Refrigerated]]></producttag>
+		<shortdescription><![CDATA[Store Brand ]]></shortdescription>
+		<meta><![CDATA[12 oz]]></meta>
+		<longdescription><![CDATA[bread, english muffins]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.03]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Buns]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[bread]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[Martin's]]></shortdescription>
+		<meta><![CDATA[8 count]]></meta>
+		<longdescription><![CDATA[bread, hot dog buns, potato]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.14]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Buns]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[bread]]></subcategory>
+		<producttag><![CDATA[Shelf, Perishable]]></producttag>
+		<shortdescription><![CDATA[Martin's]]></shortdescription>
+		<meta><![CDATA[8 count]]></meta>
+		<longdescription><![CDATA[bread, hamburger buns, potato]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.14]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[soup]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[canned]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[College Inn]]></shortdescription>
+		<meta><![CDATA[14.5 oz]]></meta>
+		<longdescription><![CDATA[chicken broth]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.07]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[pretzels]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Utz]]></shortdescription>
+		<meta><![CDATA[16 oz]]></meta>
+		<longdescription><![CDATA[Pretzels, extra thin twists]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.11]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[candy]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Haribo]]></shortdescription>
+		<meta><![CDATA[5 oz]]></meta>
+		<longdescription><![CDATA[Gummy Bears]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.09]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[trail mix]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Snack]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[store brand]]></shortdescription>
+		<meta><![CDATA[9 oz]]></meta>
+		<longdescription><![CDATA[Trail Mix, Classic]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.1]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cheese]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[dairy]]></subcategory>
+		<producttag><![CDATA[refridgerated]]></producttag>
+		<shortdescription><![CDATA[Crystal Farms]]></shortdescription>
+		<meta><![CDATA[10 oz]]></meta>
+		<longdescription><![CDATA[Cheese, mild chedder, cracker cuts]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cheese]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[dairy]]></subcategory>
+		<producttag><![CDATA[refridgerated]]></producttag>
+		<shortdescription><![CDATA[Crystal Farms]]></shortdescription>
+		<meta><![CDATA[10 oz]]></meta>
+		<longdescription><![CDATA[Cheese, sharp chedder, cracker cuts]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cheese]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[dairy]]></subcategory>
+		<producttag><![CDATA[refridgerated]]></producttag>
+		<shortdescription><![CDATA[Crystal Farms]]></shortdescription>
+		<meta><![CDATA[10 oz]]></meta>
+		<longdescription><![CDATA[Cheese, pepper jack, cracker cuts]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cheese]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[dairy]]></subcategory>
+		<producttag><![CDATA[refridgerated]]></producttag>
+		<shortdescription><![CDATA[Crystal Farms]]></shortdescription>
+		<meta><![CDATA[10 oz]]></meta>
+		<longdescription><![CDATA[Cheese, Swiss, cracker cuts]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cheese]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[Refrigerated]]></producttag>
+		<shortdescription><![CDATA[Kraft]]></shortdescription>
+		<meta><![CDATA[6.4 oz]]></meta>
+		<longdescription><![CDATA[cheddar cheese, sharp, cubed]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.53]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[cheese]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[Crystal Farms]]></shortdescription>
+		<meta><![CDATA[10 oz]]></meta>
+		<longdescription><![CDATA[Cheese, mozzarela, string]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.6]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[bacon]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[meat]]></subcategory>
+		<producttag><![CDATA[Refrigerated]]></producttag>
+		<shortdescription><![CDATA[Kunzler]]></shortdescription>
+		<meta><![CDATA[10 oz]]></meta>
+		<longdescription><![CDATA[bacon, original]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.7]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[meat]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[meat]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[Hillshire Farms]]></shortdescription>
+		<meta><![CDATA[7 oz]]></meta>
+		<longdescription><![CDATA[deli meat, roast beef, sliced]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.32]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[meat]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[Hillshire Farms]]></shortdescription>
+		<meta><![CDATA[9 oz]]></meta>
+		<longdescription><![CDATA[deli meat, smoked turkey]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[meat]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[Hillshire Farms]]></shortdescription>
+		<meta><![CDATA[9 oz]]></meta>
+		<longdescription><![CDATA[deli meat, smoked ham]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.32]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[meat]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[Hillshire Farms]]></shortdescription>
+		<meta><![CDATA[9 oz]]></meta>
+		<longdescription><![CDATA[deli meat, honey ham]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.32]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[meat]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[store brand]]></shortdescription>
+		<meta><![CDATA[1 lb]]></meta>
+		<longdescription><![CDATA[Turkey, ground, frozen]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.85]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[meat]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[store brand]]></shortdescription>
+		<meta><![CDATA[1 lb]]></meta>
+		<longdescription><![CDATA[Chicken breast, ]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.85]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[meat]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[store brand]]></shortdescription>
+		<meta><![CDATA[approx 48 oz]]></meta>
+		<longdescription><![CDATA[Chicken, rotisserie]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[6.51]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[meat]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[meat]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[Kunzler]]></shortdescription>
+		<meta><![CDATA[16 oz]]></meta>
+		<longdescription><![CDATA[hot dogs, regular]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.67]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[pasta]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[pasta]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Betty Crocker]]></shortdescription>
+		<meta><![CDATA[7.5 oz]]></meta>
+		<longdescription><![CDATA[Pasta Sides, classic]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.33]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[pasta]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[pasta]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Betty Crocker]]></shortdescription>
+		<meta><![CDATA[7.5 oz]]></meta>
+		<longdescription><![CDATA[Pasta Sides, creamy italian]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.33]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[pasta]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[pasta]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Mueller's ]]></shortdescription>
+		<meta><![CDATA[12 oz]]></meta>
+		<longdescription><![CDATA[Shells, Jumbo]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.16]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[pasta]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[pasta]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Mueller's ]]></shortdescription>
+		<meta><![CDATA[16 oz]]></meta>
+		<longdescription><![CDATA[Shells, small sea]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.78]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[beans]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[canned]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Bush's]]></shortdescription>
+		<meta><![CDATA[28 oz]]></meta>
+		<longdescription><![CDATA[Baked Beans, Bush's Best, Homestyle]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.3]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[beans]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[canned]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Bush's]]></shortdescription>
+		<meta><![CDATA[28 oz]]></meta>
+		<longdescription><![CDATA[Baked Beans, Bush's Best, Vegetarian]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.3]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[oil]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Other]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[Crisco]]></shortdescription>
+		<meta><![CDATA[16 oz]]></meta>
+		<longdescription><![CDATA[Oil, vegetable]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.93]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[oil]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Other]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[store brand]]></shortdescription>
+		<meta><![CDATA[17 oz]]></meta>
+		<longdescription><![CDATA[Oil, olive, extra virgin]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.74]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[coffee]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Other]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[store brand]]></shortdescription>
+		<meta><![CDATA[100 ct]]></meta>
+		<longdescription><![CDATA[Filters, coffee, 8-12 cup]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.17]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Salt & Pepper]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Other]]></subcategory>
+		<producttag><![CDATA[Shelf, Stable]]></producttag>
+		<shortdescription><![CDATA[store brand]]></shortdescription>
+		<meta><![CDATA[]]></meta>
+		<longdescription><![CDATA[Salt & Pepper combo]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.51]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Culinary Circle]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, pepperoni, thin crust]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.52]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Culinary Circle]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, pepperoni, rising crust]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.52]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Culinary Circle]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, supreme, thin crust]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.52]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Culinary Circle]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, supreme, rising crust]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.52]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Culinary Circle]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, cheese, rising crust]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.52]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Tombstone]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, pepperoni]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.38]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Tombstone]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, 4 meat]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.38]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Tombstone]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, supreme]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.38]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Pizza]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Tombstone]]></shortdescription>
+		<meta><![CDATA[12"]]></meta>
+		<longdescription><![CDATA[Pizza, cheese]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.38]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Chicken, frozen]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Banquet]]></shortdescription>
+		<meta><![CDATA[24 oz]]></meta>
+		<longdescription><![CDATA[Chicken breast nuggets]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.37]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Chicken, frozen]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Banquet]]></shortdescription>
+		<meta><![CDATA[24 oz]]></meta>
+		<longdescription><![CDATA[Chicken breast strips]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.37]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Fries]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Ore Ida]]></shortdescription>
+		<meta><![CDATA[32 oz]]></meta>
+		<longdescription><![CDATA[Fries, golden]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Fries]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Ore Ida]]></shortdescription>
+		<meta><![CDATA[32 oz]]></meta>
+		<longdescription><![CDATA[fries, crinkle]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.41]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Waffles]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[Eggo]]></shortdescription>
+		<meta><![CDATA[10 count]]></meta>
+		<longdescription><![CDATA[Waffles, frozen]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[2.65]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Waffles]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Quick Foods]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[store brand]]></shortdescription>
+		<meta><![CDATA[10 count]]></meta>
+		<longdescription><![CDATA[Waffles, frozen]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[1.35]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Shoppers Value]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Scallops]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Seafood]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[1 lb, aprox]]></meta>
+		<longdescription><![CDATA[Scallops]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[19]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Shrimp]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Seafood]]></subcategory>
+		<producttag><![CDATA[Freezer]]></producttag>
+		<shortdescription><![CDATA[]]></shortdescription>
+		<meta><![CDATA[1 lb, aprox]]></meta>
+		<longdescription><![CDATA[Shrimp, gulf]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[14]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Ham]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[meat]]></subcategory>
+		<producttag><![CDATA[refrigerator]]></producttag>
+		<shortdescription><![CDATA[Kite's ]]></shortdescription>
+		<meta><![CDATA[1 lb, aprox]]></meta>
+		<longdescription><![CDATA[Ham, Virginia, breakfast slices]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[7.49]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[pork]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[meat]]></subcategory>
+		<producttag><![CDATA[refrigerated]]></producttag>
+		<shortdescription><![CDATA[Gore's]]></shortdescription>
+		<meta><![CDATA[1 lb]]></meta>
+		<longdescription><![CDATA[Pork, sausage, bulk]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[5.45]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Milk]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[refrigerator]]></producttag>
+		<shortdescription><![CDATA[Mt. Crawford Creamery]]></shortdescription>
+		<meta><![CDATA[gallon]]></meta>
+		<longdescription><![CDATA[Milk, whole, pasteurized Non-homogenized, creamilne]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.99]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Milk]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[refrigerator]]></producttag>
+		<shortdescription><![CDATA[Mt. Crawford Creamery]]></shortdescription>
+		<meta><![CDATA[1/2 gal]]></meta>
+		<longdescription><![CDATA[Milk, whole, pasteurized Non-homogenized, creamilne]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.99]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Milk]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[refrigerator]]></producttag>
+		<shortdescription><![CDATA[Mt. Crawford Creamery]]></shortdescription>
+		<meta><![CDATA[gallon]]></meta>
+		<longdescription><![CDATA[Milk, 2%, pasteurized Non-homogenized, creamilne]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.99]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Milk]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[refrigerator]]></producttag>
+		<shortdescription><![CDATA[Mt. Crawford Creamery]]></shortdescription>
+		<meta><![CDATA[1/2 gal]]></meta>
+		<longdescription><![CDATA[Milk, 2%, pasteurized Non-homogenized, creamilne]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.99]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Milk]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[refrigerator]]></producttag>
+		<shortdescription><![CDATA[Mt. Crawford Creamery]]></shortdescription>
+		<meta><![CDATA[gallon]]></meta>
+		<longdescription><![CDATA[Milk, skim, pasteurized Non-homogenized, creamline]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[4.99]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+	<node>
+		<undefined0><![CDATA[]]></undefined0>
+		<producttitle><![CDATA[Milk]]></producttitle>
+		<price><![CDATA[]]></price>
+		<parentcategory><![CDATA[All Groceries]]></parentcategory>
+		<subcategory><![CDATA[Dairy]]></subcategory>
+		<producttag><![CDATA[refrigerator]]></producttag>
+		<shortdescription><![CDATA[Mt. Crawford Creamery]]></shortdescription>
+		<meta><![CDATA[1/2 gal]]></meta>
+		<longdescription><![CDATA[Milk, skim, pasteurized Non-homogenized, creamline]]></longdescription>
+		<productimagevincentwillfillin><![CDATA[]]></productimagevincentwillfillin>
+		<walmartprice><![CDATA[]]></walmartprice>
+		<shoppersvalue><![CDATA[3.99]]></shoppersvalue>
+		<willowgrove><![CDATA[]]></willowgrove>
+		<mainstreetbakery><![CDATA[]]></mainstreetbakery>
+		<primarystore><![CDATA[Willow Grove]]></primarystore>
+	</node>
+</data>

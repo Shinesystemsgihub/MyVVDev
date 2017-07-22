@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<productname><![CDATA[Milk]]></productname>
+		<sku><![CDATA[1001]]></sku>
+		<inventory><![CDATA[5]]></inventory>
+		<description><![CDATA[Whole Mlike from happy cows]]></description>
+		<image><![CDATA[http://www.legendairy.com.au/~/media/legendairy/images/lhp/milk-carton-thumbnail.jpg?h=600&la=en&w=600]]></image>
+	</node>
+	<node>
+		<productname><![CDATA[Eggs]]></productname>
+		<sku><![CDATA[1002]]></sku>
+		<inventory><![CDATA[4]]></inventory>
+		<description><![CDATA[Large Eggs by the Dozen]]></description>
+		<image><![CDATA[http://media.jrn.com/images/b99244621z.1_20140414111226_000_gdk5odal.1-0.jpg]]></image>
+	</node>
+	<node>
+		<productname><![CDATA[Bread]]></productname>
+		<sku><![CDATA[1003]]></sku>
+		<inventory><![CDATA[3]]></inventory>
+		<description><![CDATA[Sliced Wonder Bread&reg;]]></description>
+		<image><![CDATA[https://goloblogdotcom.files.wordpress.com/2013/10/2-year-wonder-bread.jpg]]></image>
+	</node>
+</data>

@@ -1,0 +1,182 @@
+0000.007 (0) Opened log file at time: Tue, 16 May 2017 15:45:51 +0000 on http://myvv.com
+0000.010 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.1 WP: 4.7.4 PHP: 5.6.30 (apache2handler, Darwin MacBook-Pro-2.local 14.5.0 Darwin Kernel Version 14.5.0: Fri Feb 17 10:33:20 PST 2017; root:xnu-2782.50.9.1.1~1/RELEASE_X86_64 x86_64) MySQL: 5.6.35 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 49.5M | 50.3M) multisite: N openssl: OpenSSL 1.0.2j  26 Sep 2016 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.012 (0) Free space on disk containing Updraft's temporary directory: 40571.8 MB
+0000.029 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.031 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.070 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1494360558, seconds_ago=588993)
+0000.074 (0) Set semaphore last lock (d) time to 2017-05-16 15:45:51
+0000.076 (0) Semaphore lock (d) complete
+0000.081 (0) Backup run: resumption=0, nonce=9713d4b85439, begun at=1494949551 (0s ago), job type=backup
+0000.084 (0) Scheduling a resumption (1) after 300 seconds (1494949851) in case this run gets aborted
+0000.122 (0) This backup run is not intended for files - skipping
+0000.124 (0) Beginning creation of database dump (WordPress DB)
+0000.176 (0) Table mvvp_options: Total expected rows (approximate): 709
+0000.283 (0) Table mvvp_options: Total rows added: 716 in 0.10 seconds
+0000.294 (0) Table mvvp_options: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_options.table.gz - 201.3 KB)
+0000.305 (0) Table mvvp_users: Total expected rows (approximate): 22
+0000.312 (0) Table mvvp_users: Total rows added: 22 in 0.00 seconds
+0000.319 (0) Table mvvp_users: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_users.table.gz - 2.1 KB)
+0000.326 (0) Table mvvp_usermeta: Total expected rows (approximate): 742
+0000.352 (0) Table mvvp_usermeta: Total rows added: 742 in 0.02 seconds
+0000.361 (0) Table mvvp_usermeta: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_usermeta.table.gz - 8.8 KB)
+0000.368 (0) Table mvvp_commentmeta: Total expected rows (approximate): 4
+0000.372 (0) Table mvvp_commentmeta: Total rows added: 4 in 0.00 seconds
+0000.380 (0) Table mvvp_commentmeta: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_commentmeta.table.gz - 0.4 KB)
+0000.388 (0) Table mvvp_comments: Total expected rows (approximate): 27
+0000.395 (0) Table mvvp_comments: Total rows added: 27 in 0.01 seconds
+0000.403 (0) Table mvvp_comments: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_comments.table.gz - 1.7 KB)
+0000.413 (0) Table mvvp_links: Total expected rows (approximate): 0
+0000.417 (0) Table mvvp_links: Total rows added: 0 in 0.00 seconds
+0000.424 (0) Table mvvp_links: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_links.table.gz - 0.4 KB)
+0000.430 (0) Table mvvp_postmeta: Total expected rows (approximate): 14888
+0001.113 (0) Table mvvp_postmeta: Total rows added: 14417 in 0.68 seconds
+0001.122 (0) Table mvvp_postmeta: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_postmeta.table.gz - 148.1 KB)
+0001.129 (0) Table mvvp_posts: Total expected rows (approximate): 964
+0001.338 (0) Table mvvp_posts: Total rows added: 998 in 0.21 seconds
+0001.347 (0) Table mvvp_posts: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_posts.table.gz - 74.1 KB)
+0001.353 (0) Table mvvp_term_relationships: Total expected rows (approximate): 1956
+0001.395 (0) Table mvvp_term_relationships: Total rows added: 1956 in 0.04 seconds
+0001.404 (0) Table mvvp_term_relationships: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_term_relationships.table.gz - 5 KB)
+0001.411 (0) Table mvvp_term_taxonomy: Total expected rows (approximate): 71
+0001.418 (0) Table mvvp_term_taxonomy: Total rows added: 71 in 0.01 seconds
+0001.426 (0) Table mvvp_term_taxonomy: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_term_taxonomy.table.gz - 1 KB)
+0001.433 (0) Table mvvp_termmeta: Total expected rows (approximate): 61
+0001.439 (0) Table mvvp_termmeta: Total rows added: 61 in 0.00 seconds
+0001.447 (0) Table mvvp_termmeta: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_termmeta.table.gz - 0.9 KB)
+0001.453 (0) Table mvvp_terms: Total expected rows (approximate): 71
+0001.459 (0) Table mvvp_terms: Total rows added: 71 in 0.00 seconds
+0001.466 (0) Table mvvp_terms: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_terms.table.gz - 1.4 KB)
+0001.477 (0) Table mvvp_woocommerce_order_itemmeta: Total expected rows (approximate): 1175
+0001.522 (0) Table mvvp_woocommerce_order_itemmeta: Total rows added: 1175 in 0.04 seconds
+0001.530 (0) Table mvvp_woocommerce_order_itemmeta: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_order_itemmeta.table.gz - 8 KB)
+0001.541 (0) Table mvvp_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0001.545 (0) Table mvvp_woocommerce_payment_tokenmeta: Total rows added: 0 in 0.00 seconds
+0001.552 (0) Table mvvp_woocommerce_payment_tokenmeta: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_payment_tokenmeta.table.gz - 0.4 KB)
+0001.560 (0) Table mvvp_mvv_tsr: Total expected rows (approximate): 1
+0001.565 (0) Table mvvp_mvv_tsr: Total rows added: 1 in 0.00 seconds
+0001.578 (0) Table mvvp_mvv_tsr: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_mvv_tsr.table.gz - 0.6 KB)
+0001.585 (0) Table mvvp_mvvtsr: Total expected rows (approximate): 1
+0001.590 (0) Table mvvp_mvvtsr: Total rows added: 1 in 0.00 seconds
+0001.598 (0) Table mvvp_mvvtsr: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_mvvtsr.table.gz - 0.4 KB)
+0001.608 (0) Table mvvp_pmxi_files: Total expected rows (approximate): 14
+0001.612 (0) Table mvvp_pmxi_files: Total rows added: 14 in 0.00 seconds
+0001.620 (0) Table mvvp_pmxi_files: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_files.table.gz - 1.1 KB)
+0001.629 (0) Table mvvp_pmxi_history: Total expected rows (approximate): 14
+0001.635 (0) Table mvvp_pmxi_history: Total rows added: 14 in 0.00 seconds
+0001.642 (0) Table mvvp_pmxi_history: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_history.table.gz - 0.7 KB)
+0001.659 (0) Table mvvp_pmxi_imports: Total expected rows (approximate): 14
+0001.679 (0) Table mvvp_pmxi_imports: Total rows added: 14 in 0.02 seconds
+0001.686 (0) Table mvvp_pmxi_imports: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_imports.table.gz - 8.7 KB)
+0001.692 (0) Table mvvp_pmxi_posts: Total expected rows (approximate): 297
+0001.710 (0) Table mvvp_pmxi_posts: Total rows added: 297 in 0.02 seconds
+0001.718 (0) Table mvvp_pmxi_posts: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_posts.table.gz - 5.4 KB)
+0001.729 (0) Table mvvp_pmxi_templates: Total expected rows (approximate): 0
+0001.735 (0) Table mvvp_pmxi_templates: Total rows added: 1 in 0.00 seconds
+0001.743 (0) Table mvvp_pmxi_templates: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_templates.table.gz - 4.1 KB)
+0001.752 (0) Table mvvp_woocommerce_api_keys: Total expected rows (approximate): 0
+0001.756 (0) Table mvvp_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0001.764 (0) Table mvvp_woocommerce_api_keys: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_api_keys.table.gz - 0.4 KB)
+0001.774 (0) Table mvvp_woocommerce_attribute_taxonomies: Total expected rows (approximate): 3
+0001.779 (0) Table mvvp_woocommerce_attribute_taxonomies: Total rows added: 3 in 0.00 seconds
+0001.786 (0) Table mvvp_woocommerce_attribute_taxonomies: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_attribute_taxonomies.table.gz - 0.5 KB)
+0001.796 (0) Table mvvp_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0001.800 (0) Table mvvp_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0001.808 (0) Table mvvp_woocommerce_downloadable_product_permissions: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_downloadable_product_permissions.table.gz - 0.5 KB)
+0001.816 (0) Table mvvp_woocommerce_log: Total expected rows (approximate): 0
+0001.820 (0) Table mvvp_woocommerce_log: Total rows added: 0 in 0.00 seconds
+0001.833 (0) Table mvvp_woocommerce_log: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_log.table.gz - 0.4 KB)
+0001.843 (0) Table mvvp_woocommerce_order_items: Total expected rows (approximate): 133
+0001.852 (0) Table mvvp_woocommerce_order_items: Total rows added: 133 in 0.01 seconds
+0001.860 (0) Table mvvp_woocommerce_order_items: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_order_items.table.gz - 1.7 KB)
+0001.869 (0) Table mvvp_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0001.873 (0) Table mvvp_woocommerce_payment_tokens: Total rows added: 0 in 0.00 seconds
+0001.887 (0) Table mvvp_woocommerce_payment_tokens: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_payment_tokens.table.gz - 0.4 KB)
+0001.894 (0) Table mvvp_woocommerce_sessions: Total expected rows (approximate): 0
+0001.897 (0) Table mvvp_woocommerce_sessions: Total rows added: 0 in 0.00 seconds
+0001.905 (0) Table mvvp_woocommerce_sessions: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_sessions.table.gz - 0.4 KB)
+0001.913 (0) Table mvvp_woocommerce_shipping_zone_locations: Total expected rows (approximate): 0
+0001.917 (0) Table mvvp_woocommerce_shipping_zone_locations: Total rows added: 0 in 0.00 seconds
+0001.925 (0) Table mvvp_woocommerce_shipping_zone_locations: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_shipping_zone_locations.table.gz - 0.4 KB)
+0001.935 (0) Table mvvp_woocommerce_shipping_zone_methods: Total expected rows (approximate): 3
+0001.939 (0) Table mvvp_woocommerce_shipping_zone_methods: Total rows added: 3 in 0.00 seconds
+0001.947 (0) Table mvvp_woocommerce_shipping_zone_methods: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_shipping_zone_methods.table.gz - 0.4 KB)
+0001.957 (0) Table mvvp_woocommerce_shipping_zones: Total expected rows (approximate): 2
+0001.961 (0) Table mvvp_woocommerce_shipping_zones: Total rows added: 2 in 0.00 seconds
+0001.969 (0) Table mvvp_woocommerce_shipping_zones: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_shipping_zones.table.gz - 0.4 KB)
+0001.979 (0) Table mvvp_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0001.983 (0) Table mvvp_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0001.996 (0) Table mvvp_woocommerce_tax_rate_locations: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_tax_rate_locations.table.gz - 0.4 KB)
+0002.005 (0) Table mvvp_woocommerce_tax_rates: Total expected rows (approximate): 0
+0002.009 (0) Table mvvp_woocommerce_tax_rates: Total rows added: 0 in 0.00 seconds
+0002.022 (0) Table mvvp_woocommerce_tax_rates: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_tax_rates.table.gz - 0.4 KB)
+0002.031 (0) Table mvvp_wpml_mails: Total expected rows (approximate): 323
+0002.165 (0) Table mvvp_wpml_mails: Total rows added: 323 in 0.13 seconds
+0002.173 (0) Table mvvp_wpml_mails: finishing file (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_wpml_mails.table.gz - 77.3 KB)
+0002.180 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_options.table.gz (1/34): adding to final database dump
+0002.266 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_users.table.gz (2/34): adding to final database dump
+0002.268 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_usermeta.table.gz (3/34): adding to final database dump
+0002.276 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_commentmeta.table.gz (4/34): adding to final database dump
+0002.278 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_comments.table.gz (5/34): adding to final database dump
+0002.280 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_links.table.gz (6/34): adding to final database dump
+0002.281 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_postmeta.table.gz (7/34): adding to final database dump
+0002.461 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_posts.table.gz (8/34): adding to final database dump
+0002.505 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_term_relationships.table.gz (9/34): adding to final database dump
+0002.519 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_term_taxonomy.table.gz (10/34): adding to final database dump
+0002.522 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_termmeta.table.gz (11/34): adding to final database dump
+0002.523 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_terms.table.gz (12/34): adding to final database dump
+0002.525 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_order_itemmeta.table.gz (13/34): adding to final database dump
+0002.538 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_payment_tokenmeta.table.gz (14/34): adding to final database dump
+0002.540 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_mvv_tsr.table.gz (15/34): adding to final database dump
+0002.542 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_mvvtsr.table.gz (16/34): adding to final database dump
+0002.544 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_files.table.gz (17/34): adding to final database dump
+0002.545 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_history.table.gz (18/34): adding to final database dump
+0002.547 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_imports.table.gz (19/34): adding to final database dump
+0002.557 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_posts.table.gz (20/34): adding to final database dump
+0002.562 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_pmxi_templates.table.gz (21/34): adding to final database dump
+0002.565 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_api_keys.table.gz (22/34): adding to final database dump
+0002.566 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_attribute_taxonomies.table.gz (23/34): adding to final database dump
+0002.568 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_downloadable_product_permissions.table.gz (24/34): adding to final database dump
+0002.571 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_log.table.gz (25/34): adding to final database dump
+0002.572 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_order_items.table.gz (26/34): adding to final database dump
+0002.576 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_payment_tokens.table.gz (27/34): adding to final database dump
+0002.578 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_sessions.table.gz (28/34): adding to final database dump
+0002.579 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_shipping_zone_locations.table.gz (29/34): adding to final database dump
+0002.581 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_shipping_zone_methods.table.gz (30/34): adding to final database dump
+0002.582 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_shipping_zones.table.gz (31/34): adding to final database dump
+0002.584 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_tax_rate_locations.table.gz (32/34): adding to final database dump
+0002.586 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_woocommerce_tax_rates.table.gz (33/34): adding to final database dump
+0002.587 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db-table-mvvp_wpml_mails.table.gz (34/34): adding to final database dump
+0002.669 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db.gz: finished writing out complete database file (544 KB)
+0002.710 (0) Total database tables backed up: 34 (backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db.gz, size: 565191, sha256)
+0002.719 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db.gz: db: This file has not yet been successfully uploaded: will queue
+0002.720 (0) Saving backup history. Total backup size: 551.9 KB
+0002.724 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0002.729 (0) Cloud backup selection (1/1): email (last)
+0002.730 (0) Beginning dispatch of backup to remote (email)
+0002.732 (0) backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db.gz: email to: wilke...
+0002.835 (0) Recording as successfully uploaded: backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db.gz (eef041c23d91b838316dd8bc81198ad5)
+0002.847 (0) Deleting local file: backup_2017-05-16-1145_My_Vacay_Valet_9713d4b85439-db.gz: OK
+0002.852 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0002.855 (0) Number of backup sets in history: 3; groups (db): 1
+0002.856 (0) Examining (for databases) backup set with group_id=0, nonce=9713d4b85439, datestamp=1494949551 (May 16 2017 15:45:51)
+0002.858 (0) This backup set is the backup set just made, so will not be deleted.
+0002.859 (0) Examining (for databases) backup set with group_id=0, nonce=f2c06b81b02e, datestamp=1494360557 (May 09 2017 20:09:17)
+0002.861 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.862 (0) Examining (for databases) backup set with group_id=0, nonce=a3e86a89a402, datestamp=1493668065 (May 01 2017 19:47:45)
+0002.864 (0) 1493668065: db: this set includes a database (backup_2017-05-01-1547_My_Vacay_Valet_a3e86a89a402-db.gz); db count is now 2
+0002.865 (0) 1493668065: db: over retain limit (2); will delete this database
+0002.867 (0) Delete file: backup_2017-05-01-1547_My_Vacay_Valet_a3e86a89a402-db.gz, service=email
+0002.869 (0) This backup set is now empty; will remove from history
+0002.871 (0) Corresponding log file (log.a3e86a89a402.txt) not found - must have already been deleted
+0002.872 (0) Number of backup sets in history: 2; groups (files): 1
+0002.874 (0) Examining (for files) backup set with nonce=9713d4b85439, datestamp=1494949551 (May 16 2017 15:45:51)
+0002.875 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.876 (0) Examining (for files) backup set with nonce=f2c06b81b02e, datestamp=1494360557 (May 09 2017 20:09:17)
+0002.877 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.878 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0002.883 (0) Resume backup (9713d4b85439, 0): finish run
+0002.886 (0) Decremented the semaphore (d) by 1
+0002.888 (0) Semaphore (d) unlocked
+0002.889 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0002.895 (0) No email will/can be sent - the user has not configured an email address.
+0002.896 (0) The backup apparently succeeded and is now complete
