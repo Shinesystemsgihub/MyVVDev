@@ -93,6 +93,10 @@ Tags: black, white, two-columns, fixed-layout, threaded-comments, full-width-tem
     position:relative;
 }
 
+.home .header-cart {
+    display: none !important;
+}
+
 /*--------------------------------------------------------------
 Vogue - Slider Centered Styling
 --------------------------------------------------------------*/

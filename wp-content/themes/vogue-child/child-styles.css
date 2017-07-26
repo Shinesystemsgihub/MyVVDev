@@ -18,22 +18,33 @@ border: none !important;
     height: auto;
 }
 div.front-page-hero {
-    height: 500px;
     padding: 70px;
-    background: url('/wp-content/themes/vogue-child/images/myvacayvalethero.jpg') center center;
-}
+/*    background: url('/wp-content/themes/vogue-child/images/how-it-works-banner.jpg') center center;
+*/}
 
 
 div.front-page-hero h1 {
-    font-family: 'Helvetica Neue', sans; 
-    font-size: 52px;
+    margin: 0px;
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 48px;
     text-align: center;
 }
 
 form.form-horizontal {
     width: 500px; 
-    margin: 0 auto;
+    margin: 0 auto 50px;
     text-align: center;
+    background: #ECECEC;
+}
+
+.form-group input {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.form-button button {
+    width: 100%;
+    margin: 5px 0px;
 }
 
 .home input {
@@ -49,6 +60,13 @@ form.form-horizontal {
 
 
 @media screen and (max-width: 980px) {
+
+    div.front-page-hero {
+        padding: 20px;
+    }
+    div.front-page-hero h1 {
+        font-size: 24px !important;
+    }
     .block-image {
         width: 100% !important;
         margin: 0px !important;
@@ -87,6 +105,7 @@ form.form-horizontal {
         position: relative;
     }
 }
+
 
 /*--------------------------------------------------------------
 Vogue - SO Editor Fixes for woo product display, etc. 

@@ -33,18 +33,32 @@ function debug_to_console( $data ) {
 
     echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
 }
+/*End*/
 
-/*Dynamic Menu for loggedin vs non logged in users*/
+/*Dynamic Menus for loggedin vs non logged in users*/
 function dynamic_menu() {
     if ( is_user_logged_in() ) {
         echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
-    }
+    } 
     else  { 
         echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
     }
 }
 
 add_action( 'emp_partial' , 'dynamic_menu' );
+
+function footer_dynamic_menu() {
+    if ( is_user_logged_in() ) {
+        echo wp_nav_menu( array( 'theme_location' => 'footer-bar', 'menu_id' => 'footer-bar-menu' ) );
+    } 
+    else  { 
+        echo wp_nav_menu(array( 'theme_location' => 'front-page-footer-menu', 'menu_id' => 'front-page-footer' ) ); 
+    }
+}
+
+add_action( 'emp_partial' , 'footer_dynamic_menu' );
+
+/*End*/
 
 $zip_form_page = array( 'front-page' );
 
@@ -60,6 +74,14 @@ function zip_form() {
     }
 }   
 add_action( 'emp_partial' , 'zip_form' );
+
+add_filter( 'body_class', 'custom_class' );
+function custom_class( $classes ) {
+    if ( is_page_template( 'front-example.php' ) ) {
+        $classes[] = 'example';
+    }
+    return $classes;
+}
 
 /*End 2017 Theme Function*/
 
