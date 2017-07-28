@@ -19,23 +19,17 @@
 		
 		<div class="site-footer-bottom-bar <?php echo ( get_theme_mod( 'vogue-header-layout' ) == 'vogue-header-layout-two' ) ? sanitize_html_class( 'layout-circles' ) : sanitize_html_class( 'layout-plain' ); ?>">
 		
-			<div class="site-container"><div class="site-footer-bottom-bar-left">Copyright <?php echo date('Y') ?> <a href="/" style="font-size: inherit; color: #8FC97B;">My Vacay Valet</a>&nbsp;&nbsp;A Division of SHINE Enterprises</div><div class="site-footer-bottom-bar-right">
-	                
-		            <?php wp_nav_menu( array( 'theme_location' => 'footer-bar','container' => false, 'fallback_cb' => false, 'depth'  => 1 ) ); ?>
-		            
-		            <?php if ( ! get_theme_mod( 'vogue-footer-hide-social' ) ) : ?>
-		            
-		            	<?php get_template_part( '/templates/social-links' ); ?>
-		            	
-		            <?php endif; ?>
-	                
-		        </div>
-		        
+			<div class="site-container">
+
+				<div class="site-footer-bottom-bar-left">Copyright <?php echo date('Y') ?> <a href="/" style="font-size: inherit; color: #8FC97B;">My Vacay Valet</a>&nbsp;&nbsp;A Division of SHINE Enterprises</div>
+
+				
 		    </div>
 			
 	        <div class="clearboth"></div>
+
 		</div>
-		
+
 	<?php endif; ?>
 	
 </footer>
