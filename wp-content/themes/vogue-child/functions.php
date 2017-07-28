@@ -1,4 +1,42 @@
 <?php
+
+function redirectHome() {
+    global $wp;
+    global $wpdb;
+
+    $server = $_SERVER['HTTP_HOST'];
+    $request_uri = $_SERVER['REQUEST_URI'];
+
+    $_COOKIE['myvv'] = 'elmo@sesamestreet.com';
+
+    if (isset($_COOKIE['myvv'])) {
+        $email = $_COOKIE['myvv'];
+        if(is_email($email)) {
+            $query = "
+                SELECT 
+                    u.ID as userId, 
+                    u.display_name as userName, 
+                    f.ID as franchiseId, 
+                    f.franchise_name as franchiseName, 
+                    f.franchise_uri as franchiseUri
+                FROM mvvp_users AS u
+                    LEFT JOIN mvvp_franchises AS f ON u.franchise_id = f.ID
+                WHERE u.user_email = %s
+                    AND f.active =1
+            ";
+            $user = $wpdb->get_row($wpdb->prepare($query, [$email]), ARRAY_A, 0);
+            if ($user) {
+                $uri = '/' . ($user ? $user['franchiseUri'] : '');
+                $url = $server . $uri;
+                if ($uri !== $request_uri) {
+                    wp_redirect($url);
+                    exit;
+                }
+            }
+        }
+    }
+}
+add_action( 'init', 'redirectHome' );
 /**
  * Queue parent style followed by child/customized style
  */
@@ -6,12 +44,11 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_dequeue_style('vogue-style');
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
-    wp_enqueue_style('chlid-styles', get_stylesheet_directory_uri() . '/child-styles.css', array('parent-style'));
+    wp_enqueue_style('child-styles', get_stylesheet_directory_uri() . '/child-styles.css', array('parent-style'));
 }, 99);
 
 
 /*2017 Theme Functions*/
-
 
 /*Add Menus*/
 function register_my_menus() {
@@ -46,14 +83,13 @@ function dynamic_menu() {
 
 add_action( 'emp_partial' , 'dynamic_menu' );
 
-$zip_form_page = array( 'front-page' );
-
 /*Display zipcode form on front-page*/
 function zip_form() {
+    $zip_form_page = array( 'front-page' );
+
     if ( is_page_template( $zip_form_page ) ) {
         get_template_part( 'zip-form' ); 
                 debug_to_console( "yes-zip-form" );
-
     }
     else  { 
         debug_to_console( "no-zip-form" ); 
@@ -221,11 +257,12 @@ add_filter('woocommerce_is_purchasable', function ($is_purchasable, $product) {
 add_action('template_redirect', function () {
     global $product_cart_items;
     $cart_ids = array();
+    $items = is_array($product_cart_items) ? $product_cart_items : array();
     foreach (WC()->cart->cart_contents as $prod_in_cart) {
         // Get the Product ID
         $cart_ids[] = $prod_in_cart['product_id'];
     }
-    $intersect = @array_intersect($cart_ids, $product_cart_items);
+    $intersect = @array_intersect($cart_ids, $items);
     if (empty($intersect)) {
         WC()->cart->empty_cart(true);
         wc_clear_notices();
@@ -546,3 +583,4 @@ function add_role_to_body($classes) {
     }
     return $classes;
 }
+?>

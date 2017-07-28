@@ -29,7 +29,7 @@ define('DB_USER', 'shinesan_wp2');
 define('DB_PASSWORD', 'E[EG0gBxQL71[[3');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'myvacayvalet.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
@@ -78,6 +78,8 @@ $table_prefix  = 'mvvp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+
+/** defing('WP_ALLOW_REPAIR', true); */
 
 /* That's all, stop editing! Happy blogging. */
 

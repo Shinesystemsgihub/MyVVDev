@@ -271,7 +271,7 @@ switch($step) {
 	 * The wpdb constructor bails when WP_SETUP_CONFIG is set, so we must
 	 * fire this manually. We'll fail here if the values are no good.
 	 */
-	$wpdb->db_connect();
+	$wpdb->db_connectdb_connect();
 
 	if ( ! empty( $wpdb->error ) )
 		wp_die( $wpdb->error->get_error_message() . $tryagain_link );
