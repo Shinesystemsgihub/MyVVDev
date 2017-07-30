@@ -6,8 +6,8 @@ class PageBase
 {
     const BROWSER_NAME = 'chrome';
     const BROWSER_URL = 'localhost:4444/wd/hub';
-    const BASE_URL = 'http://dev.myvacayvalet.com/';
-    // const BASE_URL = 'http://localhost:3000/';
+    // const BASE_URL = 'http://dev.myvacayvalet.com/';
+    const BASE_URL = 'http://localhost:3000/';
     
     const CAPABILITIES = array(
         \WebDriverCapabilityType::BROWSER_NAME => self::BROWSER_NAME,

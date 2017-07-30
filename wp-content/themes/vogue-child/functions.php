@@ -1,13 +1,10 @@
 <?php
-
-function redirectHome() {
+function getUserFranchiseUri() {
     global $wp;
     global $wpdb;
 
-    $server = $_SERVER['HTTP_HOST'];
-    $request_uri = $_SERVER['REQUEST_URI'];
-
-    $_COOKIE['myvv'] = 'elmo@sesamestreet.com';
+    $_COOKIE['myvv'] = '';
+    // $_COOKIE['myvv'] = 'elmo@sesamestreet.com';
 
     if (isset($_COOKIE['myvv'])) {
         $email = $_COOKIE['myvv'];
@@ -25,18 +22,24 @@ function redirectHome() {
                     AND f.active =1
             ";
             $user = $wpdb->get_row($wpdb->prepare($query, [$email]), ARRAY_A, 0);
-            if ($user) {
-                $uri = '/' . ($user ? $user['franchiseUri'] : '');
-                $url = $server . $uri;
-                if ($uri !== $request_uri) {
-                    wp_redirect($url);
-                    exit;
-                }
-            }
         }
+    }
+    return isset($user) ? $user['franchiseUri'] : '';
+}
+
+function redirectHome() {
+    $server = $_SERVER['HTTP_HOST'];
+    $request_uri = $_SERVER['REQUEST_URI'];
+    $request_url = get_site_url();
+
+    $uri = getUserFranchiseUri();
+    if($request_uri === '/' && $uri !== '') {
+        $success = wp_redirect($request_url . '/' . $uri);
+        exit;
     }
 }
 add_action( 'init', 'redirectHome' );
+
 /**
  * Queue parent style followed by child/customized style
  */
@@ -83,11 +86,11 @@ function dynamic_menu() {
 
 add_action( 'emp_partial' , 'dynamic_menu' );
 
+$zip_form_page = array( 'front-page' );
+
 /*Display zipcode form on front-page*/
 function zip_form() {
-    $zip_form_page = array( 'front-page' );
-
-    if ( is_page_template( $zip_form_page ) ) {
+    if ( ! isset($zip_form_page) || is_page_template( $zip_form_page ) ) {
         get_template_part( 'zip-form' ); 
                 debug_to_console( "yes-zip-form" );
     }

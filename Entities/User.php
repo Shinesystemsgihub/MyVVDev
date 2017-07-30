@@ -13,7 +13,7 @@
     }
 
     public function setFranchiseId($value) {
-      $this->franchiseId = $value;
+      $this->franchiseId = $value ? $value : '';
     }
 
     public function getFranchiseName() {
@@ -21,7 +21,7 @@
     }
 
     public function setFranchiseName($value) {
-      $this->franchiseName = $value;
+      $this->franchiseName = $value ? $value : '';
     }
 
     public function getFranchiseUri() {
@@ -29,7 +29,7 @@
     }
 
     public function setFranchiseUri($value) {
-      $this->franchiseUri = $value;
+      $this->franchiseUri = $value ? $value : '';
     }
 
     public function getUserId() {
@@ -37,7 +37,7 @@
     }
 
     public function setUserId($value) {
-      $this->userId = $value;
+      $this->userId = $value ? $value : '';
     }
 
     public function getUserName() {
@@ -45,7 +45,7 @@
     }
 
     public function setUserName($value) {
-      $this->userName = $value;
+      $this->userName = $value ? $value : '';
     }
 
     public function toArray() {
