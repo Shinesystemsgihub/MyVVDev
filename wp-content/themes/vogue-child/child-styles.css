@@ -58,6 +58,16 @@ form.form-horizontal {
     right: 0;
 }
 
+.cabin-form select {
+    max-width: 100%;
+    border: 1px solid #8FC87A!important;
+}
+
+.cabin-form ul {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
 
 @media screen and (max-width: 980px) {
 
@@ -185,4 +195,33 @@ Blog Post Edits
 --------------------------------------------------------------*/
 .single .entry-meta {
     display: none !important;
+}
+
+/*--------------------------------------------------------------
+Cart checkout button issue.
+--------------------------------------------------------------*/
+.checkout-button > br {
+    display: none;
+}
+/*--------------------------------------------------------------
+My Account Page Edits
+--------------------------------------------------------------*/
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads {display: none !important;}
+
+/*--------------------------------------------------------------
+Media Queries
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 782px) {
+    .woocommerce-account .woocommerce-MyAccount-navigation ul li a.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads {display: none;}
+    }
+}
+@media only screen and (max-width: 700px) {
+    .cabin-form select {
+        max-width: 100%;
+    }
+    .content-area .entry-header h1.entry-title, .woocommerce h1.page-title, .woocommerce-page h1.page-title {
+        text-align: center;
+    }
+
 }

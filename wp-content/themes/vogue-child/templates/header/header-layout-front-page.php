@@ -58,5 +58,5 @@ global $woocommerce; ?>
 		
 		<div class="clearboth"></div>
 	</div>
-	  <?php zip_form(); ?>  
+	<?php zip_form(); ?>
 </header><!-- #masthead -->

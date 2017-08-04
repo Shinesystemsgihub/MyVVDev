@@ -1,0 +1,26 @@
+<!-- Exit popover -->
+
+<div id="exitPopover"class="popover">
+
+		<div id="primary" class="content-area">
+
+			<div id="form_container">
+			
+				<h1><a>Don't Go Yet!</a></h1>
+				<form id="exitForm" class="popover-form" action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" method="post">
+					<div class="form_description">
+						<p>Fill out and submit the form below to save your cart!</p>
+					</div>						
+					<input type="text" name="user_login" value="Username" id="user_login" class="input" />
+				    <input type="text" name="user_email" value="E-Mail" id="user_email" class="input"  />
+				    <?php do_action('register_form'); ?>
+				    <input type="submit" value="Register" id="register" />
+				</form>	
+				
+			</div>
+
+
+
+		</div>
+		
+	</div>
