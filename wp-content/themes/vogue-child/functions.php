@@ -1,4 +1,78 @@
 <?php
+global $wp;
+global $wpdb;
+
+require_once dirname( __FILE__ ) . '/../../../Repository/franchiseRepository.php';
+require_once dirname( __FILE__ ) . '/../../../Repository/userRepository.php';
+
+function getUserFranchiseUri() {
+    $franchiseUri = ''; 
+    $userId = get_current_user_id();
+
+    if ( $userId > 0 ) {
+        $userRepository = new UserRepository;
+        $user = $userRepository->findById($userId);
+        if ( isset($user['franchiseUri']) ) {
+            $val = $user['franchiseUri'];
+            $_COOKIE['myvv'] = $val;
+            $franchiseUri = $val;
+        }
+    }
+    return $franchiseUri;
+}
+
+function setUserFranchiseId( $franchiseId ) {
+    $userId = get_current_user_id();
+    if ( $userId > 0 ) {
+        $userRepository = new UserRepository;
+        $userRepository->setUserFranchiseId( $franchiseId, $userId );
+    }
+}
+
+function redirectHome() {
+    $request_url = home_url();
+    $request_uri = $_SERVER['REQUEST_URI'];
+
+    $uri = getUserFranchiseUri();
+    if($request_uri === '/' && $uri !== '') {
+        $success = wp_redirect($request_url . '/' . $uri);
+        exit;
+    }
+}
+add_action( 'init', 'redirectHome' );
+
+function process_franchise() {
+    $franchiseRepository = new FranchiseRepository;
+    $safe_zipcode = intval( $_POST['zipcode'] );
+    if ( ! $safe_zipcode ) {
+        $safe_zipcode = '';
+    }
+
+    if (strlen( $safe_zipcode ) > 5 ){
+        $safe_zipcode = substr( $safe_zipcode, 0, 5 );
+    }
+
+    if($safe_zipcode) {
+        $franchise = $franchiseRepository->findByZipcode($safe_zipcode);
+    }
+    $uri = isset($franchise) ? $franchise['franchise_Uri'] : '';
+
+    if ( $uri ) {
+        setUserFranchiseId($franchise['franchise_id']);
+    }
+
+    $request_url = home_url();
+    if ( ! $uri ) {
+        $success = false;
+        exit;
+    }
+    else {
+        $success = wp_redirect($request_url . '/' . $uri);
+        exit;
+    }
+}
+add_action( 'admin_post_nopriv_franchise_form', 'process_franchise' );
+add_action( 'admin_post_franchise_form', 'process_franchise' );
 /**
  * Queue parent style followed by child/customized style
  */
@@ -6,12 +80,11 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_dequeue_style('vogue-style');
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
-    wp_enqueue_style('chlid-styles', get_stylesheet_directory_uri() . '/child-styles.css', array('parent-style'));
+    wp_enqueue_style('child-styles', get_stylesheet_directory_uri() . '/child-styles.css', array('parent-style'));
 }, 99);
 
 
 /*2017 Theme Functions*/
-
 
 /*Add Menus*/
 function register_my_menus() {
@@ -33,13 +106,12 @@ function debug_to_console( $data ) {
 
     echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
 }
-/*End*/
 
-/*Dynamic Menus for loggedin vs non logged in users*/
+/*Dynamic Menu for loggedin vs non logged in users*/
 function dynamic_menu() {
     if ( is_user_logged_in() ) {
         echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
-    } 
+    }
     else  { 
         echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
     }
@@ -47,41 +119,19 @@ function dynamic_menu() {
 
 add_action( 'emp_partial' , 'dynamic_menu' );
 
-function footer_dynamic_menu() {
-    if ( is_user_logged_in() ) {
-        echo wp_nav_menu( array( 'theme_location' => 'footer-bar', 'menu_id' => 'footer-bar-menu' ) );
-    } 
-    else  { 
-        echo wp_nav_menu(array( 'theme_location' => 'front-page-footer-menu', 'menu_id' => 'front-page-footer' ) ); 
-    }
-}
+// $zip_form_page = array( 'front-page' );
 
-add_action( 'emp_partial' , 'footer_dynamic_menu' );
-
-/*End*/
-
-$zip_form_page = array( 'front-page' );
-
-/*Display zipcode form on front-page*/
-function zip_form() {
-    if ( is_page_template( $zip_form_page ) ) {
-        get_template_part( 'zip-form' ); 
-                debug_to_console( "yes-zip-form" );
-
-    }
-    else  { 
-        debug_to_console( "no-zip-form" ); 
-    }
-}   
-add_action( 'emp_partial' , 'zip_form' );
-
-add_filter( 'body_class', 'custom_class' );
-function custom_class( $classes ) {
-    if ( is_page_template( 'front-example.php' ) ) {
-        $classes[] = 'example';
-    }
-    return $classes;
-}
+// /*Display zipcode form on front-page*/
+// function zip_form() {
+//     if ( ! isset($zip_form_page) || is_page_template( $zip_form_page ) ) {
+//         get_template_part( 'zip-form' ); 
+//                 debug_to_console( "yes-zip-form" );
+//     }
+//     else  { 
+//         debug_to_console( "no-zip-form" ); 
+//     }
+// }   
+// add_action( 'emp_partial' , 'zip_form' );
 
 /*End 2017 Theme Function*/
 
@@ -243,11 +293,12 @@ add_filter('woocommerce_is_purchasable', function ($is_purchasable, $product) {
 add_action('template_redirect', function () {
     global $product_cart_items;
     $cart_ids = array();
+    $items = is_array($product_cart_items) ? $product_cart_items : array();
     foreach (WC()->cart->cart_contents as $prod_in_cart) {
         // Get the Product ID
         $cart_ids[] = $prod_in_cart['product_id'];
     }
-    $intersect = @array_intersect($cart_ids, $product_cart_items);
+    $intersect = @array_intersect($cart_ids, $items);
     if (empty($intersect)) {
         WC()->cart->empty_cart(true);
         wc_clear_notices();
@@ -259,7 +310,7 @@ function cart_unset_all_notice()
 {
     $notices = WC()->session->get('wc_notices', array());
     unset($notices['success'], $notices['error']);
-    // wc_add_notice('Please <a href="/index.php#services">CLICK HERE</a> to select a service so you may order groceries.', 'error');
+    wc_add_notice('Please <a href="/index.php#services">CLICK HERE</a> to select a service so you may order groceries.', 'error');
 }
 
 /**

@@ -249,6 +249,8 @@ class WC_Order_Export_Engine {
 	private static function  validate_defaults( $settings ) {
 		if( empty($settings['sort_direction']) )
 			$settings['sort_direction'] = 'DESC';
+		if( !isset($settings['skip_empty_file']) )
+			$settings['skip_empty_file'] = true;
 		return apply_filters('woe_settings_validate_defaults', $settings);
 	}
 	

@@ -16,8 +16,6 @@ class WOE_Formatter_Xls extends WOE_Formatter {
 
 
 		if ( $mode != 'preview' ) {
-			//try speedup and reduce memory usage, it works only if sqlite3 was installed 
-			PHPExcel_Settings::setCacheStorageMethod( PHPExcel_CachedObjectStorageFactory::cache_to_sqlite3 );
 			//fallback to PCLZip
 			if( !class_exists('ZipArchive') )
 				PHPExcel_Settings::setZipClass(PHPExcel_Settings::PCLZIP);

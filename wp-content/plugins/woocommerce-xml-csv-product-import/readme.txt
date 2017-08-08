@@ -1,8 +1,8 @@
 === Import Products from any XML or CSV to WooCommerce ===
 Contributors: soflyy, wpallimport 
 Requires at least: 4.1
-Tested up to: 4.7.5
-Stable tag: 1.3.5
+Tested up to: 4.8.1
+Stable tag: 1.3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: woocommerce xml import, woocommerce csv import, woocommerce, import, xml, csv, wp all import, csv import, import csv, xml import, import xml, woocommerce csv importer, woocommerce xml importer, csv importer, csv import suite
@@ -83,12 +83,22 @@ The WooCommerce add-on will appear in the Step 4 of WP All Import.
 
 == Changelog ==
 
+= 1.3.6 =
+* improvement: added 'WooCommerce Advanced Options' to re-import section
+* bug fix: variations title
+* bug fix: import first variation image
+* bug fix: send order emails after custom fields were imported
+* bug fix: updating featured product status
+* bug fix: WPML & link all variations option conflict
+* bug fix: add _price field for each variation
+* bug fix: terms re-count
+
 = 1.3.5 =
-- bug fix: import product attributes
+* bug fix: import product attributes
 
 = 1.3.4 =
-- bug fix: import product visibility WC 3.0 
-- bug fix: stock threshold
+* bug fix: import product visibility WC 3.0
+* bug fix: stock threshold
 
 = 1.3.3 =
 * improvement: compatibility with WC 3.x

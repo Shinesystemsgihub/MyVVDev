@@ -405,4 +405,3 @@ class WP_Styles extends WP_Dependencies {
 		$this->print_html = '';
 	}
 }
-?>

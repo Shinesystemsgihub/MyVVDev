@@ -8,8 +8,6 @@ global $woocommerce; ?>
 	
 	<?php do_action ( 'vogue_before_topbar' ); ?>
 	
-
-	
 	<div class="site-container">
 	
 		<div class="site-branding">
@@ -58,5 +56,4 @@ global $woocommerce; ?>
 		
 		<div class="clearboth"></div>
 	</div>
-	<?php zip_form(); ?>
 </header><!-- #masthead -->
