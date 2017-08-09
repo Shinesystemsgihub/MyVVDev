@@ -108,12 +108,31 @@ function debug_to_console( $data ) {
 }
 
 /*Dynamic Menu for loggedin vs non logged in users*/
+// function dynamic_menu() {
+//     if ( is_user_logged_in() ) {
+//         echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+//     }
+//     else  { 
+//         echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
+//     }
+// }
+
+// add_action( 'emp_partial' , 'dynamic_menu' );
+
 function dynamic_menu() {
-    if ( is_user_logged_in() ) {
-        echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
-    }
-    else  { 
+
+    if ( is_front_page() ) {
         echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
+        debug_to_console( "this is using front page header" );
+    } elseif (is_account_page() && ! ( is_user_logged_in() ) ) {
+            echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
+            debug_to_console( "this is the account page and you are not logged in" );
+    } elseif (is_account_page() && ( is_user_logged_in() ) ) {
+            echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+            debug_to_console( "this is the account page and you are actually logged in" );
+    } else {
+        echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+         debug_to_console( "this is any other page header" );
     }
 }
 
