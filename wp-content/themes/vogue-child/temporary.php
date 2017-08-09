@@ -25,7 +25,6 @@
 <!--<?php //echo $to_echo; ?>-->
 
 		<div id="primary" class="content-area content-area-full">
-		
 			<main id="main" class="site-main" role="main">
 				
 
