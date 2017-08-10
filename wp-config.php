@@ -77,7 +77,7 @@ $table_prefix  = 'mvvp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /** defing('WP_ALLOW_REPAIR', true); */
 
