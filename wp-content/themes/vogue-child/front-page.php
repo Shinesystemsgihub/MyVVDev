@@ -10,7 +10,7 @@ get_template_part( 'header_front_page' ); ?>
 <div class="front-page-hero" >
 	<div class="front-page-content">
 		<h1 ><span style="font-weight: thin;">Groceries And Services<br/>Delivered Straight to Your Vacation</span><br/><br/></h1>  
-		<form action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?> " method="post" class="form-horizontal" >
+		<form action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post" class="form-horizontal" >
 				<fieldset style="border: none;">
 
 					<!-- Text input-->
@@ -21,9 +21,10 @@ get_template_part( 'header_front_page' ); ?>
 
 					<!-- Button -->
 					<div class="form-button" >
-								<input type="hidden" name="action" value="franchise_form" />
-								<input type="submit" id="zipcodeSubmit" name="zipcodeSubmit" class="btn btn-primary" value="GET STARTED" />
+						<input type="hidden" name="action" value="luray_franchise" />
+						<input type="submit" id="zipcodeSubmit" name="zipcodeSubmit" class="btn btn-primary" value="GET STARTED" />
 					</div>
+	
 				</fieldset>
 			</form>
 	</div>

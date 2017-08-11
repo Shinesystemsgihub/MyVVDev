@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) or exit;
+
 global $wp;
 global $wpdb;
 
@@ -14,7 +16,6 @@ function getUserFranchiseUri() {
         $user = $userRepository->findById($userId);
         if ( isset($user['franchiseUri']) ) {
             $val = $user['franchiseUri'];
-            $_COOKIE['myvv'] = $val;
             $franchiseUri = $val;
         }
     }
@@ -30,25 +31,25 @@ function setUserFranchiseId( $franchiseId ) {
 }
 
 function redirectHome() {
-    $request_url = home_url();
+    $home_url = home_url();
     $request_uri = $_SERVER['REQUEST_URI'];
 
     $uri = getUserFranchiseUri();
     if($request_uri === '/' && $uri !== '') {
-        $success = wp_redirect($request_url . '/' . $uri);
+        $success = wp_redirect( esc_url( $home_url . '/' . $uri ) );
         exit;
     }
 }
 add_action( 'init', 'redirectHome' );
 
-function process_franchise() {
+function process_luray_franchise() {
     $franchiseRepository = new FranchiseRepository;
     $safe_zipcode = intval( $_POST['zipcode'] );
     if ( ! $safe_zipcode ) {
         $safe_zipcode = '';
     }
 
-    if (strlen( $safe_zipcode ) > 5 ){
+    if (strlen( $safe_zipcode ) > 5 ) {
         $safe_zipcode = substr( $safe_zipcode, 0, 5 );
     }
 
@@ -61,18 +62,28 @@ function process_franchise() {
         setUserFranchiseId($franchise['franchise_id']);
     }
 
-    $request_url = home_url();
-    if ( ! $uri ) {
-        $success = false;
+    $home_url = home_url();
+    if ( $uri ) {
+        $success = wp_redirect( esc_url( $home_url . '/' . $uri ) );
         exit;
     }
     else {
-        $success = wp_redirect($request_url . '/' . $uri);
+        $success = wp_redirect( esc_url( $home_url . '/sorry-we-currently-do-not-service-this-area') );
         exit;
     }
 }
-add_action( 'admin_post_nopriv_franchise_form', 'process_franchise' );
-add_action( 'admin_post_franchise_form', 'process_franchise' );
+add_action( 'admin_post_nopriv_luray_franchise', 'process_luray_franchise' );
+add_action( 'admin_post_luray_franchise', 'process_luray_franchise' );
+
+function process_luray_rental() {
+    $safe_rentalId = intval( $_POST['rentalSelection'] );
+    $serviceUrl =  esc_url( home_url() . '/luray/choose-your-service' );
+    $success = wp_redirect( $serviceUrl ) ;
+    exit;
+}
+add_action( 'admin_post_nopriv_luray_rental', 'process_luray_rental' );
+add_action( 'admin_post_luray_rental', 'process_luray_rental' );
+
 /**
  * Queue parent style followed by child/customized style
  */
@@ -262,27 +273,28 @@ add_filter('woocommerce_is_purchasable', function ($is_purchasable, $product) {
     global $product_cart_items;
     // Service Category ID
     $category_id = 14;
+    $items = is_array($compare_cart_items) ? $compare_cart_items : [];
     //All services
     $product_cart_items = get_product_ids_by_category_id($category_id);
-    $intersect = @array_intersect($compare_cart_items, $product_cart_items);
+    $intersect = @array_intersect($items, $product_cart_items);
     $product_unic_ids = explode(',', get_option('services_unique_ids'));
-    $intersect_unic = @array_intersect($compare_cart_items, $product_unic_ids);
-    if (!empty($compare_cart_items)) {
+    $intersect_unic = @array_intersect($items, $product_unic_ids);
+    if (!empty($items)) {
         if (!empty($intersect)) {
-            if (@in_array($product->id, $product_cart_items)) {
-                $is_purchasable = in_array($product->id, $compare_cart_items);
+            if (@in_array($product->get_id(), $product_cart_items)) {
+                $is_purchasable = in_array($product->get_id(), $items);
             } else {
                 if ($intersect_unic) {
                     $is_purchasable = FALSE;
                 }
             }
         } else {
-            if (in_array($product->id, $product_unic_ids)) {
+            if (in_array($product->get_id(), $product_unic_ids)) {
                 $is_purchasable = FALSE;
             }
         }
     } elseif (empty(WC()->cart->cart_contents)) {
-        $is_purchasable = in_array($product->id, $product_cart_items);
+        $is_purchasable = in_array($product->get_id(), $product_cart_items);
     }
     return $is_purchasable;
 }, 20, 2);

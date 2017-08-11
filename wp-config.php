@@ -23,13 +23,18 @@
 define('DB_NAME', 'myvacayvalet_dev');
 
 /** MySQL database username */
-define('DB_USER', 'shinesan_wp2');
+define('DB_USER', 'myvv_test');
+// define('DB_USER', 'shinesan_wp2');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'E[EG0gBxQL71[[3');
+define('DB_PASSWORD', '8h4z95');
+// define('DB_PASSWORD', 'E[EG0gBxQL71[[3');
 
 /** MySQL hostname */
-define('DB_HOST', 'myvacayvalet.com');
+define('DB_HOST', 'localhost:3000');
+// define('DB_HOST', 'myvacayvalet.com');
+
+define('WP_ALLOW_REPAIR', true);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
@@ -77,7 +82,7 @@ $table_prefix  = 'mvvp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /** defing('WP_ALLOW_REPAIR', true); */
 

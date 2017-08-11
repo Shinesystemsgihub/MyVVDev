@@ -99,7 +99,7 @@ if ( ! class_exists( 'MVVPS_WC_Product_Compatibility' ) ) :
 			if ( MVVPS_WC_Core_Compatibility::is_wc_version_gte_3_0() ) {
 				$parent = wc_get_product( $product->get_parent_id() );
 			} else {
-				$parent = $product->is_type( 'variation' ) ? wc_get_product( $product->id ) : false;
+				$parent = $product->is_type( 'variation' ) ? wc_get_product( $product->get_id() ) : false;
 			}
 
 			return $parent;

@@ -47,7 +47,7 @@
     
     $(window).resize(function () {
         
-        
+        vogue_center_slider_elements();
         
     }).resize();
     
@@ -83,6 +83,7 @@
                 height: 'variable'
             },
             onCreate: function(items) {
+                vogue_center_slider_elements();
                 $( '.home-slider-wrap' ).removeClass( 'home-slider-remove' );
             },
             scroll: {
@@ -93,6 +94,12 @@
             pagination: '.home-slider-pager',
             prev: '.home-slider-prev',
             next: '.home-slider-next'
+        });
+    }
+    
+    function vogue_center_slider_elements() {
+        $( '.home-slider-block' ).each( function( i ){
+            $( this ).find( '.home-slider-block-inner').height( $( this ).find( '.home-slider-block-bg').outerHeight() );
         });
     }
     

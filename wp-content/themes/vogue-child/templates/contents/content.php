@@ -10,7 +10,7 @@
 	<a href="<?php the_permalink() ?>" class="post-loop-thumbnail">
 		
 		<?php the_post_thumbnail( 'large' ); ?>
-		
+	
 	</a>
 	<?php endif; ?>
 	

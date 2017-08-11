@@ -8,10 +8,15 @@ class UserRepository {
   public function __construct() {
 
     $this->pdo = new PDO(
-      'mysql:host=myvacayvalet.com;dbname=myvacayvalet_dev',
+      'mysql:host=myvacayvalet.com; dbname=myvacayvalet_dev',
       'myvv_test',
       '8h4z95');
-  }
+
+      // $this->pdo = new PDO(
+      //   'mysql:host=' . DB_HOST . '; dbname=' . DB_NAME,
+      //   DB_USER,
+      //   DB_PASSWORD);
+    }
 
   public function findByEmail( $email ) {
     

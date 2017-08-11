@@ -149,20 +149,20 @@ add_filter('woocommerce_is_purchasable', function ($is_purchasable, $product) {
     $intersect_unic = @array_intersect($compare_cart_items, $product_unic_ids);
     if (!empty($compare_cart_items)) {
         if (!empty($intersect)) {
-            if (@in_array($product->id, $product_cart_items)) {
-                $is_purchasable = in_array($product->id, $compare_cart_items);
+            if (@in_array($product->get_id(), $product_cart_items)) {
+                $is_purchasable = in_array($product->get_id(), $compare_cart_items);
             } else {
                 if ($intersect_unic) {
                     $is_purchasable = FALSE;
                 }
             }
         } else {
-            if (in_array($product->id, $product_unic_ids)) {
+            if (in_array($product->get_id(), $product_unic_ids)) {
                 $is_purchasable = FALSE;
             }
         }
     } elseif (empty(WC()->cart->cart_contents)) {
-        $is_purchasable = in_array($product->id, $product_cart_items);
+        $is_purchasable = in_array($product->get_id(), $product_cart_items);
     }
     return $is_purchasable;
 }, 20, 2);

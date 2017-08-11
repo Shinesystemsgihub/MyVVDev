@@ -4,7 +4,7 @@ Theme URI: https://kairaweb.com/theme/vogue/
 Author: Kaira
 Author URI: https://kairaweb.com/
 Description: Vogue is the theme you want! A very easy to use, highly customizable, quick and simple to setup responsive, WooCommerce ready, multipurpose eCommerce WordPress theme. Vogue offers multiple header layouts, WooCommerce design, mulitple footer layouts, multiple blog layouts and a bunch of customization settings, making it possibe to use Vogue for any type of website from a simple blog displaying your personal portfolio, e-commerce store, to a corporate business website for your agency, online community, restaurant or real estate purposes, to selling products for your fully functional online eCommerce store. To turn Vogue into an online shop simply install the WooCommerce plugin and start selling your own products in no time through your own WordPress eCommerce shop. Vogue features a clean, simple, minimal and elegant style design which will work perfectly for almost any kind of store. Vogue is fully responsive and translation ready! Used together with SiteOrigin's simple drag and drop Page Builder and the multiple page templates & layouts Vogue offers, you can easily build beautiful page layouts without any coding knowledge. Vogue integrates seamlessly with the following popular free plugins: SiteOrigin's Page Builder, Beaver Builder, BuddyPress, Contact Form 7 and WooCommerce... and there's lots more coming... Get in contact and let us know which features you'd like added! Give it a go :)
-Version: 1.4.03
+Version: 1.4.04
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: vogue
@@ -1025,10 +1025,13 @@ a:active {
 }
 .site-main > .entry-header h3,
 header.woocommerce-products-header {
-    font-size: 28px;
     margin: 0;
     padding: 0;
     float: left;
+}
+.site-main > .entry-header h3,
+header.woocommerce-products-header .page-title {
+    font-size: 28px;
 }
 .site-main > .entry-header:after {
     display: block;
@@ -1060,43 +1063,16 @@ h3.entry-title {
 }
 
 /* -------- Centered Titlebar -------- */
-
-.title-bar-centered header.entry-header {
-	padding: 0 0 15px;
-	text-align: center;
-}
-.title-bar-centered header.entry-header h1.entry-title {
-    margin: 0 0 8px;
-	text-align: center;
-}
-.title-bar-centered header.entry-header .breadcrumbs {
-	position: relative;
-    top: auto;
-    right: auto;
+.title-bar-centered .site-main > .entry-header h3,
+.title-bar-centered header.woocommerce-products-header {
+	float: none;
     text-align: center;
 }
-.woocommerce .title-bar-centered h1.page-title,
-.woocommerce-page .title-bar-centered h1.page-title {
-    margin: 0 0 30px;
-    text-align: center;
-    padding: 0;
-}
+.title-bar-centered header.entry-header .breadcrumbs,
 .woocommerce .title-bar-centered .woocommerce-breadcrumb,
 .woocommerce-page .title-bar-centered .woocommerce-breadcrumb {
-	right: auto;
-    top: 70px;
+	float: none;
     text-align: center;
-    width: 100%;
-    padding: 0 25px 0 0;
-}
-
-.woocommerce.vogue-shop-full-width.post-type-archive .title-bar-centered .woocommerce-breadcrumb,
-.woocommerce-page.vogue-shop-full-width.post-type-archive .title-bar-centered .woocommerce-breadcrumb,
-.woocommerce.vogue-shop-archives-full-width.post-type-archive .title-bar-centered .woocommerce-breadcrumb,
-.woocommerce-page.vogue-shop-archives-full-width.post-type-archive .title-bar-centered .woocommerce-breadcrumb
-.woocommerce.vogue-shop-archives-full-width.tax-product_cat .title-bar-centered .woocommerce-breadcrumb,
-.woocommerce-page.vogue-shop-archives-full-width.tax-product_cat .title-bar-centered .woocommerce-breadcrumb {
-	padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1322,22 +1298,24 @@ h3.entry-title {
 	color: #FFF !important;
 }
 .home-slider-block-inner {
-	position: absolute;
-	font-size: 19px;
-	color: inherit;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	box-sizing: border-box;
-	text-align: center;
-	margin: -100px 0 0;
-	padding: 0 25px;
-	text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+	width: 62%;
+    height: 40%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    color: inherit;
+    text-align: center;
+    padding: 0 25px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 .home-slider-block-bg {
 	background-color: rgba(0, 0, 0, 0.6);
 	display: inline-block;
-	padding: 40px;
+	padding: 30px;
 }
 .home-slider-block h3 {
     color: inherit;
@@ -1976,25 +1954,6 @@ object {
 	display: none;
 }
 
-@media only screen and (max-width: 1180px) {
-
-	.home-slider-block h3 {
-		font-size: 42px;
-	}
-
-}
-
-@media only screen and (max-width: 1020px) {
-
-	.home-slider-block-inner {
-	    font-size: 16px;
-	}
-	.home-slider-block h3 {
-    	font-size: 38px;
-	}
-
-}
-
 @media screen and (max-width: 980px) {
 
 	.main-navigation li {
@@ -2040,7 +1999,18 @@ object {
     .site-header-compact .main-navigation ul ul li a {
         padding: 7px 10px;
     }
-
+    
+    .home-slider-block-inner {
+        width: 80%;
+        font-size: 13px;
+    }
+    .home-slider-block-bg {
+        padding: 20px;
+    }
+    .home-slider-block h3 {
+        font-size: 38px;
+    }
+    
     /* ---- Mobile Nav Skin Dark ---- */
     .vogue-mobile-nav-skin-dark #main-menu,
     .vogue-mobile-nav-skin-custom #main-menu {
@@ -2086,13 +2056,6 @@ object {
     	color: #252525;
     }
 
-	.home-slider-block-inner {
-		margin: -80px 0 0;
-	}
-	.home-slider-block-bg {
-		padding: 25px;
-	}
-
 }
 
 @media only screen and (max-width: 782px) {
@@ -2129,18 +2092,6 @@ object {
 		margin: 0 0 10px !important;
 	}
 
-	.home-slider-block-inner {
-	    top: 50%;
-	    font-size: 13px;
-	    padding: 0 40px;
-	}
-	.home-slider-block-bg {
-		padding: 20px;
-	}
-	.home-slider-block h3 {
-    	font-size: 24px;
-	}
-
 }
 
 @media only screen and (max-width: 720px) {
@@ -2158,6 +2109,20 @@ object {
 		width: 100%;
 		float: none;
 	}
+    
+    .home-slider-block {
+        height: 260px;
+    }
+    .home-slider-block img {
+        width: 100%;
+        height: 100%;
+    }
+    .home-slider-block h3 {
+        font-size: 32px;
+    }
+    .home-slider-block-bg {
+        padding: 20px;
+    }
 
 	.site-footer-bottom-bar-left {
 		width: 100%;
@@ -2191,26 +2156,6 @@ object {
     .breadcrumbs {
         float: none;
     }
-
-	.home-slider-block-inner {
-	    padding: 0 50px;
-	}
-
-}
-
-@media only screen and (max-width: 580px) {
-
-	.home-slider-block {
-		min-height: 180px;
-	}
-	.home-slider-block-inner {
-	    position: relative;
-	    margin: 25px 0 35px;
-	    top: -100%;
-	}
-	.home-slider img {
-		display: none;
-	}
 
 }
 

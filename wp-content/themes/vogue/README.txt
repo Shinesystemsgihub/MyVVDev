@@ -66,6 +66,14 @@ View the theme settings under "Appearance" -> Customize.
 
 == Changelog ==
 
+#### 1.4.04
+* Style tweaks/fixes
+* Fixed/Improved Default Slider responsiveness
+* Fixed 'Center Align Titles' setting
+* Updated language.pot file
+Premium: Added setting to edit Search placeholder text
+Premium: Added setting to remove Default Slider sub-text
+
 #### 1.4.03
 * Style fix - Fixed breadcrumbs on tablet/mobile
 Premium: Added new setting to add another custom social link
