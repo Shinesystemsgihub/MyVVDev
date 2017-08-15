@@ -37,7 +37,8 @@ class UserRepository {
   }
 
   public function findById($userId) {
-    
+    if ( $userId < 1 ) return false;
+        
     $statement = $this->pdo->prepare( "
       SELECT 
         u.ID as userId, 
@@ -61,6 +62,8 @@ class UserRepository {
   }
 
   public function setUserFranchiseId( $franchiseId, $userId ) {
+    if ( $userId < 1 ) return;
+    
     $statement = $this->pdo->prepare( "
       UPDATE mvvp_users
         SET franchise_id = ?
@@ -70,6 +73,8 @@ class UserRepository {
   }
 
   public function setUserRentalId( $rentalId, $userId ) {
+    if ( $userId < 1 ) return;
+
     $statement = $this->pdo->prepare( "
       UPDATE mvvp_users
         SET rental_id = ?
@@ -79,6 +84,8 @@ class UserRepository {
   }
 
   public function setUserZipcode( $zipcode, $userId ) {
+    if ( $userId < 1 ) return;
+    
     $statement = $this->pdo->prepare( "
       UPDATE mvvp_users
         SET zip_code = ?

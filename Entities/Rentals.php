@@ -7,7 +7,7 @@ class Rental {
 class RentalList {
 
 		protected $id;
-		protected $description;
+		protected $rentalDescription;
 
 		public function getId() {
 			return $this->id;
@@ -17,11 +17,11 @@ class RentalList {
 			$this->id = $value ? $value : '';
 		}
 
-		public function getDescription() {
-			return $this->description;
+		public function getRental() {
+			return $this->rentalDescription;
 		}
 
-		public function setDescription($value) {
-			$this->description = $value ? $value : '';
+		public function setRental($value) {
+			$this->rentalDescription = $value ? $value : '';
 		}
 }

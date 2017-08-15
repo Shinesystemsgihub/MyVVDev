@@ -10,14 +10,16 @@ require_once dirname( __FILE__ ) . '/../../../Repository/userRepository.php';
 
 function getUser() {
     $userRepository = new UserRepository;
-    return $userRepository->findById( get_current_user_id() );
+    $userId =  get_current_user_id();
+    if ( $userId < 1 ) return false;
+    return $userRepository->findById( $userId );
 }
 
 function getUserFranchiseUri() {
     $franchiseUri = '';
-
     $user = getUser();
-    if ( isset( $user[ 'franchiseUri' ] ) ) {
+    
+    if ( $user && isset( $user[ 'franchiseUri' ] ) ) {
         $franchiseUri = $user[ 'franchiseUri' ];
     }
     return $franchiseUri;
@@ -42,7 +44,15 @@ function setUserZipcode() {
 
 function getFranchiseRentalsAsOptionsList() {
     $user = getUser();
-    $safe_zipcode = intval( $user[ 'zipCode'] );
+    $safe_zipcode = '';
+
+    if( $user && intval( $user[ 'zipCode'] ) > 0 ) {
+        $zipcode = $user[ 'zipCode' ];
+        $safe_zipcode = intval( $zipcode );
+    }
+    else {
+        $safe_zipcode = $_GET ? intval($_GET['zipcode']) : '';
+    }
 
     if ( ! $safe_zipcode ) {
         $safe_zipcode = '';
@@ -73,8 +83,17 @@ function redirectHome() {
 add_action( 'init', 'redirectHome' );
 
 function process_franchise() {
-    $franchiseRepository = new FranchiseRepository;
-    $safe_zipcode = intval( $_POST['zipcode'] );
+    $uri = '';
+    $user = getUser();
+    $safe_zipcode = '';
+
+    if( $user && intval( $user[ 'zipCode'] ) > 0 ) {
+        $zipcode = $user[ 'zipcode' ];
+        $safe_zipcode = intval( $zipCode );
+    }
+    else {
+        $safe_zipcode = $_POST ? intval($_POST['zipcode']) : '';
+    }
 
     if ( ! $safe_zipcode ) {
         $safe_zipcode = '';
@@ -84,19 +103,23 @@ function process_franchise() {
         $safe_zipcode = substr( $safe_zipcode, 0, 5 );
     }
 
-    if($safe_zipcode) {
-        $user = getUser();
-        $userRepository = new UserRepository();
-        $userRepository->setUserZipcode( $safe_zipcode, $user[ 'userId' ] );
-
+    if( $safe_zipcode ) {
+        $franchiseRepository = new FranchiseRepository;
         $franchise = $franchiseRepository->findByZipcode( $safe_zipcode );
-        $userRepository->setUserFranchiseId ( $franchise[ 'franchiseId' ], $user[ 'userId' ] );
+        $uri = isset( $franchise ) ? $franchise[ 'franchiseUri' ] : '';
     }
-    $uri = isset( $franchise ) ? $franchise[ 'franchiseUri' ] : '';
-
-    $home_url = home_url();
+    
+    if( $user && $uri ) {
+        $userRepository = new UserRepository;
+        $userRepository->setUserFranchiseId ( $franchise[ 'franchiseId' ], $user[ 'userId' ] );
+        $userRepository->setUserZipcode( $safe_zipcode, $user[ 'userId' ] );
+    }
+    
+    $home_url = home_url(); //wp_redirect( esc_url( add_query_arg( 'variable_to_send', '1', home_url() ) ) );
     if ( $uri ) {
-        $success = wp_safe_redirect( esc_url( $home_url . '/' . $uri ) );
+        $success = $user ? wp_safe_redirect( esc_url(  $home_url . '/' . $uri ) ) 
+                         : wp_safe_redirect( esc_url( add_query_arg( 'zipcode', $safe_zipcode, $home_url . '/' . $uri ) ) );
+        exit;
     }
     else {
         $success = wp_safe_redirect( esc_url( $home_url . '/sorry-we-currently-do-not-service-this-area') );
@@ -107,10 +130,13 @@ add_action( 'admin_post_nopriv_franchise', 'process_franchise' );
 add_action( 'admin_post_franchise', 'process_franchise' );
 
 function process_luray_rental() {
-    $userRepository = new UserRepository;
-    $safe_rentalId = intval( $_POST['rentalSelection'] );
-    $userRepository->setUserRentalId($safe_rentalId, get_current_user_id() );
-    $user = $userRepository->findById( get_current_user_id() );
+    $userId = get_current_user_id();
+    if ( $userId > 0 ) {
+        $safe_rentalId = intval( $_POST['rentalSelection'] );
+
+        $userRepository = new UserRepository;
+        $userRepository->setUserRentalId( $safe_rentalId, $userId );
+    }
 
     $serviceUrl =  esc_url( home_url() . '/luray/choose-your-service' );
     $success = wp_safe_redirect( $serviceUrl ) ;

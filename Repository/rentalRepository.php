@@ -21,9 +21,9 @@ class RentalRepository {
         concat(concat(concat(concat(concat(name, ' - '), 
         concat(if(is_pre_arrival, 'Pre-Arrival, ', '')), 
         concat(address1, if(address2 <> '', concat(', ', address2), ''))), 
-        concat(', ', city)), ', ', state), concat(', ', zipcode)) as rental
+        concat(', ', city)), ', ', state), concat(', ', zip_code)) as rentalDesription
       from mvvp_rentals
-      where zipcode = ? and is_active = 1
+      where zip_code = ? and is_active = 1
     ");
 
     $statement->execute( [ $zipcode ]) ;

@@ -25,7 +25,7 @@ define('DB_NAME', 'myvacayvalet_dev');
 /** MySQL database username */
 define('DB_USER', 'myvv');
 // define('DB_USER', 'shinesan_wp2');
-
+// 
 /** MySQL database password */
 define('DB_PASSWORD', '8h4z95');
 // define('DB_PASSWORD', 'E[EG0gBxQL71[[3');
@@ -82,7 +82,7 @@ $table_prefix  = 'mvvp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /** defing('WP_ALLOW_REPAIR', true); */
 
