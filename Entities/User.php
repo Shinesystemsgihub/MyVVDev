@@ -5,8 +5,10 @@
     protected $franchiseId;
     protected $franchiseName;
     protected $franchiseUri;
+    protected $rentalId;
     protected $userId;
     protected $userName;
+    protected $zipCode;
 
     public function getFranchiseId() {
       return $this->franchiseId;
@@ -32,6 +34,14 @@
       $this->franchiseUri = $value ? $value : '';
     }
 
+    public function getRentalId() {
+      return $this->rentalId;
+    }
+
+    public function setRentalId($value) {
+      $this->rentalId = $value ? $value : '';
+    }
+
     public function getUserId() {
       return $this->userId;
     }
@@ -48,13 +58,23 @@
       $this->userName = $value ? $value : '';
     }
 
+    public function getZipcode() {
+      return $this->zipCode;
+    }
+
+    public function setZipcode($value) {
+      $this->zipCode = $value ? $value : '';
+    }
+
     public function toArray() {
       $array = [
         'userId' => $this->getUserId(),
         'userName' => $this->getUserName(),
+        'zipCode' => $this->getZipcode(),
         'franchiseId' => $this->getFranchiseId(),
         'franchiseName' => $this->getFranchiseName(),
-        'franchiseUri' => $this->getFranchiseUri()
+        'franchiseUri' => $this->getFranchiseUri(),
+        'rentalId' => $this->getRentalId()
       ];
 
       return $array;

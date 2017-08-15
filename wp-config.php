@@ -23,7 +23,7 @@
 define('DB_NAME', 'myvacayvalet_dev');
 
 /** MySQL database username */
-define('DB_USER', 'myvv_test');
+define('DB_USER', 'myvv');
 // define('DB_USER', 'shinesan_wp2');
 
 /** MySQL database password */
@@ -31,7 +31,7 @@ define('DB_PASSWORD', '8h4z95');
 // define('DB_PASSWORD', 'E[EG0gBxQL71[[3');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost:3000');
+define('DB_HOST', 'localhost');
 // define('DB_HOST', 'myvacayvalet.com');
 
 define('WP_ALLOW_REPAIR', true);

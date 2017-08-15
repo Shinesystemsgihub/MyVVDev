@@ -5,28 +5,58 @@ global $wp;
 global $wpdb;
 
 require_once dirname( __FILE__ ) . '/../../../Repository/franchiseRepository.php';
+require_once dirname( __FILE__ ) . '/../../../Repository/rentalRepository.php';
 require_once dirname( __FILE__ ) . '/../../../Repository/userRepository.php';
 
-function getUserFranchiseUri() {
-    $franchiseUri = ''; 
-    $userId = get_current_user_id();
+function getUser() {
+    $userRepository = new UserRepository;
+    return $userRepository->findById( get_current_user_id() );
+}
 
-    if ( $userId > 0 ) {
-        $userRepository = new UserRepository;
-        $user = $userRepository->findById($userId);
-        if ( isset($user['franchiseUri']) ) {
-            $val = $user['franchiseUri'];
-            $franchiseUri = $val;
-        }
+function getUserFranchiseUri() {
+    $franchiseUri = '';
+
+    $user = getUser();
+    if ( isset( $user[ 'franchiseUri' ] ) ) {
+        $franchiseUri = $user[ 'franchiseUri' ];
     }
     return $franchiseUri;
 }
 
-function setUserFranchiseId( $franchiseId ) {
+function setUserZipcode() {
+    $safe_zipcode = intval( $_POST[ 'zipcode' ] );
+    
+    if ( ! $safe_zipcode ) {
+        $safe_zipcode = '';
+    }
+    if ( strlen( $safe_zipcode ) > 5 ) {
+        $safe_zipcode = substr( $safe_zipcode, 0, 5 );
+    }
+
     $userId = get_current_user_id();
     if ( $userId > 0 ) {
         $userRepository = new UserRepository;
-        $userRepository->setUserFranchiseId( $franchiseId, $userId );
+        $userRepository->setUserZipcode( $safe_zipcode, $userId );
+    }
+}
+
+function getFranchiseRentalsAsOptionsList() {
+    $user = getUser();
+    $safe_zipcode = intval( $user[ 'zipCode'] );
+
+    if ( ! $safe_zipcode ) {
+        $safe_zipcode = '';
+    }
+
+    if ( strlen( $safe_zipcode ) > 5 ) {
+        $safe_zipcode = substr( $safe_zipcode, 0, 5 );
+    }
+    $rentalRepository = new RentalRepository;
+    $rentalsList = $rentalRepository->findByZipcode($safe_zipcode);
+
+    $optionsList = '';
+    foreach ($rentalsList as list($id, $rental)) {
+        echo '<option value="'.$id.'">'.$rental.'</option>';
     }
 }
 
@@ -45,6 +75,7 @@ add_action( 'init', 'redirectHome' );
 function process_luray_franchise() {
     $franchiseRepository = new FranchiseRepository;
     $safe_zipcode = intval( $_POST['zipcode'] );
+
     if ( ! $safe_zipcode ) {
         $safe_zipcode = '';
     }
@@ -54,21 +85,21 @@ function process_luray_franchise() {
     }
 
     if($safe_zipcode) {
-        $franchise = $franchiseRepository->findByZipcode($safe_zipcode);
-    }
-    $uri = isset($franchise) ? $franchise['franchise_Uri'] : '';
+        $user = getUser();
+        $userRepository = new UserRepository();
+        $userRepository->setUserZipcode( $safe_zipcode, $user[ 'userId' ] );
 
-    if ( $uri ) {
-        setUserFranchiseId($franchise['franchise_id']);
+        $franchise = $franchiseRepository->findByZipcode( $safe_zipcode );
+        $userRepository->setUserFranchiseId ( $franchise[ 'franchiseId' ], $user[ 'userId' ] );
     }
+    $uri = isset( $franchise ) ? $franchise[ 'franchiseUri' ] : '';
 
     $home_url = home_url();
     if ( $uri ) {
-        $success = wp_redirect( esc_url( $home_url . '/' . $uri ) );
-        exit;
+        $success = wp_safe_redirect( esc_url( add_query_arg( 'zipcode', $safe_zipcode, $home_url . '/' . $uri ) ) );
     }
     else {
-        $success = wp_redirect( esc_url( $home_url . '/sorry-we-currently-do-not-service-this-area') );
+        $success = wp_safe_redirect( esc_url( $home_url . '/sorry-we-currently-do-not-service-this-area') );
         exit;
     }
 }
@@ -76,9 +107,13 @@ add_action( 'admin_post_nopriv_luray_franchise', 'process_luray_franchise' );
 add_action( 'admin_post_luray_franchise', 'process_luray_franchise' );
 
 function process_luray_rental() {
+    $userRepository = new UserRepository;
     $safe_rentalId = intval( $_POST['rentalSelection'] );
+    $userRepository->setUserRentalId($safe_rentalId, get_current_user_id() );
+    $user = $userRepository->findById( get_current_user_id() );
+
     $serviceUrl =  esc_url( home_url() . '/luray/choose-your-service' );
-    $success = wp_redirect( $serviceUrl ) ;
+    $success = wp_safe_redirect( $serviceUrl ) ;
     exit;
 }
 add_action( 'admin_post_nopriv_luray_rental', 'process_luray_rental' );
@@ -129,25 +164,6 @@ function dynamic_menu() {
 }
 
 add_action( 'emp_partial' , 'dynamic_menu' );
-
-// $zip_form_page = array( 'front-page' );
-
-// /*Display zipcode form on front-page*/
-// function zip_form() {
-//     if ( ! isset($zip_form_page) || is_page_template( $zip_form_page ) ) {
-//         get_template_part( 'zip-form' ); 
-//                 debug_to_console( "yes-zip-form" );
-//     }
-//     else  { 
-//         debug_to_console( "no-zip-form" ); 
-//     }
-// }   
-// add_action( 'emp_partial' , 'zip_form' );
-
-/*End 2017 Theme Function*/
-
-
-
 
 
 
