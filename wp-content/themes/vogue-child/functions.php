@@ -72,7 +72,7 @@ function redirectHome() {
 }
 add_action( 'init', 'redirectHome' );
 
-function process_luray_franchise() {
+function process_franchise() {
     $franchiseRepository = new FranchiseRepository;
     $safe_zipcode = intval( $_POST['zipcode'] );
 
@@ -96,15 +96,15 @@ function process_luray_franchise() {
 
     $home_url = home_url();
     if ( $uri ) {
-        $success = wp_safe_redirect( esc_url( add_query_arg( 'zipcode', $safe_zipcode, $home_url . '/' . $uri ) ) );
+        $success = wp_safe_redirect( esc_url( $home_url . '/' . $uri ) );
     }
     else {
         $success = wp_safe_redirect( esc_url( $home_url . '/sorry-we-currently-do-not-service-this-area') );
         exit;
     }
 }
-add_action( 'admin_post_nopriv_luray_franchise', 'process_luray_franchise' );
-add_action( 'admin_post_luray_franchise', 'process_luray_franchise' );
+add_action( 'admin_post_nopriv_franchise', 'process_franchise' );
+add_action( 'admin_post_franchise', 'process_franchise' );
 
 function process_luray_rental() {
     $userRepository = new UserRepository;
