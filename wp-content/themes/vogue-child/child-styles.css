@@ -20,13 +20,14 @@ border: none !important;
 div.front-page-content {
     height: 460px;
     padding-top: 70px;
-    background: url('/wp-content/themes/vogue-child/images/mvv-2017-hero.jpg') center center;
+    background: url('/wp-content/themes/vogue-child/images/cabin-full.jpg') center center;
+    background-size: 100% auto;
 }
 
 
 div.front-page-hero h1 {
     margin: 0px;
-    font-family: 'Helvetica Neue', sans-serif; 
+    font-family: 'Lato', 'Helvetica Neue', sans-serif; 
     font-size: 48px;
     text-align: center;
 }
@@ -43,7 +44,7 @@ form.form-horizontal {
     margin: 5px 0px;
 }
 
-.form-button button {
+#zipcodeSubmit {
     width: 100%;
     margin: 5px 0px;
 }
@@ -52,11 +53,8 @@ form.form-horizontal {
     text-align: center;
 }
 
-.home footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.home .so-panel.widget.widget_sow-editor.panel-first-child {
+    min-height: 85px;
 }
 
 .cabin-form select {
@@ -68,10 +66,34 @@ form.form-horizontal {
     padding-left: 0px;
     margin-left: 0px;
 }
+/*product edits*/
+p.product.woocommerce.add_to_cart_inline[style] {
+    border: 0px !important;
+}
+
+.product_cat-services p {
+    color: black !important;
+}
+
+/*footer shit*/
+
+/*cart*/
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    max-width: 300px;
+}
 
 
 @media screen and (max-width: 980px) {
-
+    .home .so-panel.widget.widget_sow-editor.panel-first-child {
+        min-height: 105px;
+    }
+    div.front-page-content {
+        height: 460px;
+        padding-top: 70px;
+        background: url('/wp-content/themes/vogue-child/images/cabin-full.jpg') center center;
+        background-size: 1000px auto;
+    }
     div.front-page-hero h1 {
         font-size: 24px !important;
     }
@@ -107,8 +129,21 @@ form.form-horizontal {
         width: 50%;
     }
 }
+@media screen and (max-width: 780px) {
+    .home .so-panel.widget.widget_sow-editor.panel-first-child {
+        min-height: 20px !important;
+        margin-bottom: 0px !important;
+    }
+
+   .home .panel-grid-cell {
+        max-width: 300px !important;
+        margin: 30px auto !important;
+    }
+
+
 
 @media screen and (max-width: 720px) {
+
     .front-page-hero h1 {
         font-size: 24px !important;
     }
@@ -132,7 +167,7 @@ Vogue - SO Editor Fixes for woo product display, etc.
 --------------------------------------------------------------*/
 
 /***** Messages Woocommerce *****/
-.woocommerce-LoopProduct-link .theme_error_messages{
+.home .woocommerce-LoopProduct-link .theme_error_messages{
     display: none;
 }
 .entry-summary .theme_error_messages{
@@ -216,7 +251,6 @@ Cart checkout button issue.
 /*--------------------------------------------------------------
 My Account Page Edits
 --------------------------------------------------------------*/
-.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads {display: none !important;}
 
 /*--------------------------------------------------------------
 Media Queries

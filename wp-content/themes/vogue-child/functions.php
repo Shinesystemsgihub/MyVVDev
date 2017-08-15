@@ -154,12 +154,31 @@ function debug_to_console( $data ) {
 }
 
 /*Dynamic Menu for loggedin vs non logged in users*/
+// function dynamic_menu() {
+//     if ( is_user_logged_in() ) {
+//         echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+//     }
+//     else  { 
+//         echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
+//     }
+// }
+
+// add_action( 'emp_partial' , 'dynamic_menu' );
+
 function dynamic_menu() {
-    if ( is_user_logged_in() ) {
-        echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
-    }
-    else  { 
+
+    if ( is_front_page() ) {
         echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
+        debug_to_console( "this is using front page header" );
+    } elseif (is_account_page() && ! ( is_user_logged_in() ) ) {
+            echo wp_nav_menu(array( 'theme_location' => 'front-page-menu', 'menu_id' => 'front-page-header' ) ); 
+            debug_to_console( "this is the account page and you are not logged in" );
+    } elseif (is_account_page() && ( is_user_logged_in() ) ) {
+            echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+            debug_to_console( "this is the account page and you are actually logged in" );
+    } else {
+        echo wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );
+         debug_to_console( "this is any other page header" );
     }
 }
 
@@ -410,67 +429,25 @@ add_action( 'woocommerce_after_checkout_form', 'add_message_in_checkout_form');
 add_action('init', 'mvv_remove_woocommerce_template_loop_product_thumbnail', 10);
 
 function mvv_remove_woocommerce_template_loop_product_thumbnail() {
-	remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+    remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
 }
 
 add_action('init', 'mvv_add_woocommerce_template_loop_product_thumbnail', 10);
 
 function mvv_add_woocommerce_template_loop_product_thumbnail() {
-	add_action('woocommerce_before_shop_loop_item_title', 'mvv_woocommerce_template_loop_product_thumbnail', 10);
+    add_action('woocommerce_before_shop_loop_item_title', 'mvv_woocommerce_template_loop_product_thumbnail', 10);
 }
 
 if ( ! function_exists( 'mvv_woocommerce_template_loop_product_thumbnail' ) ) {
 
-	function mvv_woocommerce_template_loop_product_thumbnail() {
-		
-		global $post;
-		global $product;
-
-		$terms = get_the_terms( $post->ID, 'product_tag' );
-		
-		$term_array = array();
-        if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-            foreach ( $terms as $term ) {
-                $term_array[] = $term->name;
-            }
-        }
-
-		if( in_array('local', $term_array) ) {
-			echo '<div class="local-flag mvv-thumbnail-wrap">';
-		}
-		else {
-			echo '<div class="mvv-thumbnail-wrap">';
-		}
-		
-		$thumbnail_html = woocommerce_get_product_thumbnail();
-
-		if ( ! $product->is_in_stock() ) {
-
-		$value = get_post_meta( $post->ID, 'mvv_outofstock_value', true );
+    function mvv_woocommerce_template_loop_product_thumbnail() {
         
-        $outofstock_text = "OUT OF STOCK";
-        $outofstock_text = apply_filters('mvv_outofstock_text', $outofstock_text);
-		//if ( $value === 'grey_out'){
-				$thumbnail_html = str_replace('class="', 'class="gray-out ', $thumbnail_html);
-				$thumbnail_html = '<div class="outofstock-text"><span class="outofstock-inner">' . $outofstock_text . '</span></div>' . $thumbnail_html;
-		//	}
-		}
+        global $post;
+        global $product;
 
-		echo $thumbnail_html;
-		
-		echo '</div>';
-	}
-}
-
-add_filter('woocommerce_single_product_image_html','mvv_add_local_flag', 10, 2);
-
-if ( ! function_exists( 'mvv_add_local_flag' ) ) {
-	
-	function mvv_add_local_flag($html, $postID) {
-
-		$terms = get_the_terms( $postID, 'product_tag' );
-		
-		$term_array = array();
+        $terms = get_the_terms( $post->ID, 'product_tag' );
+        
+        $term_array = array();
         if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
             foreach ( $terms as $term ) {
                 $term_array[] = $term->name;
@@ -478,26 +455,68 @@ if ( ! function_exists( 'mvv_add_local_flag' ) ) {
         }
 
         if( in_array('local', $term_array) ) {
-        	$html = str_replace( "class=\"woocommerce-main-image", "class=\"local-flag woocommerce-main-image", $html );
+            echo '<div class="local-flag mvv-thumbnail-wrap">';
+        }
+        else {
+            echo '<div class="mvv-thumbnail-wrap">';
+        }
+        
+        $thumbnail_html = woocommerce_get_product_thumbnail();
+
+        if ( ! $product->is_in_stock() ) {
+
+        $value = get_post_meta( $post->ID, 'mvv_outofstock_value', true );
+        
+        $outofstock_text = "OUT OF STOCK";
+        $outofstock_text = apply_filters('mvv_outofstock_text', $outofstock_text);
+        //if ( $value === 'grey_out'){
+                $thumbnail_html = str_replace('class="', 'class="gray-out ', $thumbnail_html);
+                $thumbnail_html = '<div class="outofstock-text"><span class="outofstock-inner">' . $outofstock_text . '</span></div>' . $thumbnail_html;
+        //  }
+        }
+
+        echo $thumbnail_html;
+        
+        echo '</div>';
+    }
+}
+
+add_filter('woocommerce_single_product_image_html','mvv_add_local_flag', 10, 2);
+
+if ( ! function_exists( 'mvv_add_local_flag' ) ) {
+    
+    function mvv_add_local_flag($html, $postID) {
+
+        $terms = get_the_terms( $postID, 'product_tag' );
+        
+        $term_array = array();
+        if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+            foreach ( $terms as $term ) {
+                $term_array[] = $term->name;
+            }
+        }
+
+        if( in_array('local', $term_array) ) {
+            $html = str_replace( "class=\"woocommerce-main-image", "class=\"local-flag woocommerce-main-image", $html );
         }
 
         $product = wc_get_product( $postID );
 
         if ( ! $product->is_in_stock() ) {
 
-		$value = get_post_meta( $postID, 'mvv_outofstock_value', true );
+        $value = get_post_meta( $postID, 'mvv_outofstock_value', true );
         $outofstock_text = "OUT OF STOCK";
         $outofstock_text = apply_filters('mvv_outofstock_text', $outofstock_text);
         
-		if ( $value === 'grey_out' || true){
-				$html = str_replace('attachment-shop_single', 'attachment-shop_single gray-out', $html);
-				
-			}
-		$html = str_replace('</a>', '<div class="outofstock-text"><span class="outofstock-inner">'.$outofstock_text.'</span></div></a>', $html);
-		}
+        if ( $value === 'grey_out' || true){
+                $html = str_replace('attachment-shop_single', 'attachment-shop_single gray-out', $html);
+                
+            }
+        $html = str_replace('</a>', '<div class="outofstock-text"><span class="outofstock-inner">'.$outofstock_text.'</span></div></a>', $html);
+        }
 
-		return $html;
-	}
+        return $html;
+    }
 }
 
 add_action( 'add_meta_boxes', 'mvv_add_outofstock_meta_box' );
@@ -556,79 +575,79 @@ function mvv_check_local_avail($status) {
 
     if (is_admin()) { return $status; }
 
-	global $product;
-	global $woocommerce;
-	$content = $woocommerce->cart->get_cart();
-	if ( is_object($product)) {
-	    
-	    $id = $product->get_id();
-	    
-	    foreach($content as $key => $value) {
-	
-    	    if ( is_array($value['mvv_tsr']) && !empty($value['mvv_tsr']) && $value['mvv_tsr'][0]['arrival_date'] !== NULL) {
-    	    	$date_day = date('N', strtotime($value['mvv_tsr'][0]['arrival_date']));
-				$arrival_day = "";
-				if ($date_day === '7') $arrival_day = "Sunday";
-				if ($date_day === '1') $arrival_day = "Monday";
-				if ($date_day === '2') $arrival_day = "Tuesday";
-    		    
-    		    $product_cat = get_the_terms($id, 'product_cat');
-
-    		    foreach ($product_cat as $key => $value) {
-
-        			    $cat_name = $value->name;
-    
-        			    if ($cat_name === "Main Street Bakery") {
-        				    if ($arrival_day === "Sunday" || $arrival_day === "Monday") {
-        					    return false;
-        				    }
-        			    }
+    global $product;
+    global $woocommerce;
+    $content = $woocommerce->cart->get_cart();
+    if ( is_object($product)) {
         
-        			    if ($cat_name === "Willow Grove Farm Market") {
-        				    if ($arrival_day === "Tuesday" || $arrival_day === "Monday") {
-        					    return false;
-        				    }
-        			    }
-    		        }
-    	    }
-    }   
-	    }
+        $id = $product->get_id();
+        
+        foreach($content as $key => $value) {
+    
+            if ( is_array($value['mvv_tsr']) && !empty($value['mvv_tsr']) && $value['mvv_tsr'][0]['arrival_date'] !== NULL) {
+                $date_day = date('N', strtotime($value['mvv_tsr'][0]['arrival_date']));
+                $arrival_day = "";
+                if ($date_day === '7') $arrival_day = "Sunday";
+                if ($date_day === '1') $arrival_day = "Monday";
+                if ($date_day === '2') $arrival_day = "Tuesday";
+                
+                $product_cat = get_the_terms($id, 'product_cat');
 
-	return $status;
+                foreach ($product_cat as $key => $value) {
+
+                        $cat_name = $value->name;
+    
+                        if ($cat_name === "Main Street Bakery") {
+                            if ($arrival_day === "Sunday" || $arrival_day === "Monday") {
+                                return false;
+                            }
+                        }
+        
+                        if ($cat_name === "Willow Grove Farm Market") {
+                            if ($arrival_day === "Tuesday" || $arrival_day === "Monday") {
+                                return false;
+                            }
+                        }
+                    }
+            }
+    }   
+        }
+
+    return $status;
 }
 
 add_filter('mvv_outofstock_text', 'mvv_outofstock_text', 10, 1);
 
 function mvv_outofstock_text($text) {
-    	global $product;
-	global $woocommerce;
-	$content = $woocommerce->cart->get_cart();
-	
-	foreach($content as $key => $value) {
-    	if ( is_array($value['mvv_tsr']) && !empty($value['mvv_tsr']) && $value['mvv_tsr'][0]['arrival_date'] !== NULL) {
-
-    		$date_day = date('N', strtotime($value['mvv_tsr'][0]['arrival_date']));
-				$arrival_day = "";
-				if ($date_day === '7') $arrival_day = "Sunday";
-				if ($date_day === '1') $arrival_day = "Monday";
-				if ($date_day === '2') $arrival_day = "Tuesday";
-				
-    		$product_cat = get_the_terms($product->get_id(), 'product_cat');
-    		foreach ($product_cat as $key => $value) {
-    			$cat_name = $value->name;
-    			if ($cat_name === "Main Street Bakery") {
-    				if ($arrival_day === "Sunday" || $arrival_day === "Monday") {
-    					return "UNAVAILABLE ON SUNDAY AND MONDAY";
-    				}
-    			}
+        global $product;
+    global $woocommerce;
+    $content = $woocommerce->cart->get_cart();
     
-    			if ($cat_name === "Willow Grove Farm Market") {
-    				if ($arrival_day === "Tuesday" || $arrival_day === "Monday") {
-    					return "UNAVAILABLE ON MONDAY AND TUESDAY";
-    				}
-    			}
-    		}
-    	}
+    foreach($content as $key => $value) {
+        if ( is_array($value['mvv_tsr']) && !empty($value['mvv_tsr']) && $value['mvv_tsr'][0]['arrival_date'] !== NULL) {
+
+            $date_day = date('N', strtotime($value['mvv_tsr'][0]['arrival_date']));
+                $arrival_day = "";
+                if ($date_day === '7') $arrival_day = "Sunday";
+                if ($date_day === '1') $arrival_day = "Monday";
+                if ($date_day === '2') $arrival_day = "Tuesday";
+                
+            $product_cat = get_the_terms($product->get_id(), 'product_cat');
+            foreach ($product_cat as $key => $value) {
+                $cat_name = $value->name;
+                if ($cat_name === "Main Street Bakery") {
+                    if ($arrival_day === "Sunday" || $arrival_day === "Monday") {
+                        return "UNAVAILABLE ON SUNDAY AND MONDAY";
+                    }
+                }
+    
+                if ($cat_name === "Willow Grove Farm Market") {
+                    if ($arrival_day === "Tuesday" || $arrival_day === "Monday") {
+                        return "UNAVAILABLE ON MONDAY AND TUESDAY";
+                    }
+                }
+            }
+        }
 }
     return "OUT OF STOCK";
 }
