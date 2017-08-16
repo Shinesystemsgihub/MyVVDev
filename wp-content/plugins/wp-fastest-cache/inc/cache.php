@@ -110,6 +110,11 @@
 					}
 				}
 			}
+
+			// to decode path if it is not utf-8
+			if($this->cacheFilePath){
+				$this->cacheFilePath = urldecode($this->cacheFilePath);
+			}
 		}
 
 		public function set_cdn(){
@@ -154,13 +159,27 @@
 		public function createCache(){		
 			if(isset($this->options->wpFastestCacheStatus)){
 
+				// to check logged-in user
 				if(isset($this->options->wpFastestCacheLoggedInUser) && $this->options->wpFastestCacheLoggedInUser == "on"){
-					// to check logged-in user
 					foreach ((array)$_COOKIE as $cookie_key => $cookie_value){
 						if(preg_match("/wordpress_logged_in/i", $cookie_key)){
 							ob_start(array($this, "cdn_rewrite"));
 
 							return 0;
+						}
+					}
+				}
+
+				// to exclude admin users
+				$users_groups = get_users(array("role" => "administrator", "fields" => array("user_login")));
+				foreach ((array)$_COOKIE as $cookie_key => $cookie_value){
+					if(preg_match("/wordpress_logged_in/i", $cookie_key)){
+						foreach ($users_groups as $user_key => $user_value) {
+							if(preg_match("/^".preg_quote($user_value->user_login, "/")."/", $cookie_value)){
+								ob_start(array($this, "cdn_rewrite"));
+
+								return 0;
+							}
 						}
 					}
 				}
@@ -308,6 +327,7 @@
 			$list = array(
 						"\/wp\-comments\-post\.php",
 						"\/sitemap\.xml",
+						"\/sitemap_index\.xml",
 						"\/wp\-login\.php",
 						"\/robots\.txt",
 						"\/wp\-cron\.php",
@@ -340,6 +360,14 @@
 				//"\/product-category"
 
 				array_push($list, "\/cart", "\/checkout", "\/receipt", "\/confirmation", "\/wc-api\/");
+			}
+
+			if($this->isPluginActive('wp-easycart/wpeasycart.php')){
+				array_push($list, "\/cart");
+			}
+
+			if($this->isPluginActive('easy-digital-downloads/easy-digital-downloads.php')){
+				array_push($list, "\/cart", "\/checkout");
 			}
 
 			if(preg_match("/".implode("|", $list)."/i", $_SERVER["REQUEST_URI"])){
@@ -568,8 +596,19 @@
 
 
 					if(isset($this->options->wpFastestCacheLazyLoad)){
-						// to excude Lazy Load if the page is amp
-						if(!preg_match("/<html[^\>]+amp[^\>]*>/i", $content)){
+						$execute_lazy_load = true;
+						
+						// to disable Lazy Load if the page is amp
+						if(preg_match("/<html[^\>]+amp[^\>]*>/i", $content)){
+							$execute_lazy_load = false;
+						}
+						
+						// to disable for Ajax Load More on the pages
+						if($this->isPluginActive('ajax-load-more/ajax-load-more.php') && preg_match("/\/page\/\d+\//", $_SERVER["REQUEST_URI"])){
+							$execute_lazy_load = false;
+						}
+
+						if($execute_lazy_load){
 							if(!class_exists("WpFastestCacheLazyLoad")){
 								include_once $this->get_premium_path("lazy-load.php");
 							}
@@ -695,8 +734,6 @@
 					}
 				}
 			}
-
-			$cachFilePath = urldecode($cachFilePath);
 
 			if($create){
 				if (!is_user_logged_in() && !$this->isCommenter()){

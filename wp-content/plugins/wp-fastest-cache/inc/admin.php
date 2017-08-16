@@ -392,12 +392,29 @@
 			}else{
 				$webp = false;
 			}
+
+			$basename = "$1.webp";
+
+			// this part for sub-directory installation
+			// site_url() and home_url() must be the same
+			if(preg_match("/https?\:\/\/[^\/]+\/(.+)/", site_url(), $siteurl_base_name)){
+				if(preg_match("/https?\:\/\/[^\/]+\/(.+)/", home_url(), $homeurl_base_name)){
+					$homeurl_base_name[1] = trim($homeurl_base_name[1], "/");
+					$siteurl_base_name[1] = trim($siteurl_base_name[1], "/");
+
+					if($homeurl_base_name[1] == $siteurl_base_name[1]){
+						if(preg_match("/".preg_quote($homeurl_base_name[1], "/")."$/", trim(ABSPATH, "/"))){
+							$basename = $homeurl_base_name[1]."/".$basename;
+						}
+					}
+				}
+			}
 							
 			if($webp){
 				if(ABSPATH == "//"){
-					$RewriteCond = "RewriteCond %{DOCUMENT_ROOT}/$1.webp -f"."\n";
+					$RewriteCond = "RewriteCond %{DOCUMENT_ROOT}/".$basename." -f"."\n";
 				}else{
-					$RewriteCond = "RewriteCond %{DOCUMENT_ROOT}/$1.webp -f [or]"."\n";
+					$RewriteCond = "RewriteCond %{DOCUMENT_ROOT}/".$basename." -f [or]"."\n";
 					$RewriteCond = $RewriteCond."RewriteCond ".ABSPATH."$1.webp -f"."\n";
 				}
 
@@ -408,14 +425,10 @@
 						"RewriteCond %{HTTP_ACCEPT} image/webp"."\n".
 						"RewriteCond %{REQUEST_URI} \.(jpe?g|png)"."\n".
 						$RewriteCond.
-						"RewriteRule ^(.*) \"/$1.webp\" [L]"."\n".
+						"RewriteRule ^(.*) \"/".$basename."\" [L]"."\n".
 						"</IfModule>"."\n".
 						"<IfModule mod_headers.c>"."\n".
 						"Header append Vary Accept env=REDIRECT_accept"."\n".
-						"Header set Expires \"max-age=2592000, public\""."\n".
-						"Header unset ETag"."\n".
-						"Header set Connection keep-alive"."\n".
-						"FileETag None"."\n".
 						"</IfModule>"."\n".
 						"AddType image/webp .webp"."\n".
 						"# END WEBPWpFastestCache"."\n";
@@ -592,6 +605,7 @@
 					$this->ruleForWpContent()."\n".
 					$this->prefixRedirect().
 					$this->excludeRules()."\n".
+					$this->excludeAdminCookie()."\n".
 					$this->http_condition_rule()."\n".
 					"RewriteCond %{HTTP_USER_AGENT} !(".$this->get_excluded_useragent().")"."\n".
 					"RewriteCond %{REQUEST_METHOD} !POST"."\n".
@@ -2036,13 +2050,6 @@
 						<h3>Having Issues?</h3>
 						<ul>
 							<li><label>You can create a ticket</label> <a target="_blank" href="http://wordpress.org/support/plugin/wp-fastest-cache"><label>WordPress support forum</label></a></li>
-							<?php
-							if(isset($this->options->wpFastestCacheLanguage) && $this->options->wpFastestCacheLanguage == "tr"){
-								?>
-								<li><label>R10 Üzerinden Sorabilirsiniz</label> <a target="_blank" href="http://www.r10.net/wordpress/1096868-wp-fastest-cache-wp-en-hizli-ve-en-basit-cache-sistemi.html"><label>R10.net destek başlığı</label></a></li>
-								<?php
-							}
-							?>
 						</ul>
 					<?php } ?>
 				</div>

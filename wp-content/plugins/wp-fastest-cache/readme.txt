@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, performance, wp-cache, total cache, super cache
 Requires at least: 3.3
 Tested up to: 4.8
-Stable tag: 0.8.7.1
+Stable tag: 0.8.7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,17 @@ Wpfc does not support Wordpress Multisite yet.
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.7.2 =
+* to exclude the admins cookies for the cache automatically
+* to clear the cache of category and tag after update
+* refactoring of insertWebp()
+* to exclude /cart automatically for eCommerce Shopping Cart by WP EasyCart
+* to exclude /cart and /checkout automatically for Easy Digital Downloads
+* to exclude /sitemap_index.xml automatically for Yoast SEO
+* to decode path if it is not utf-8
+* to fix problem on activation and deactivation
+* to clear widget cache after publishing a new post
 
 = 0.8.7.1 =
 * to fix image error on Structured Data Testing Tool when cdn is used

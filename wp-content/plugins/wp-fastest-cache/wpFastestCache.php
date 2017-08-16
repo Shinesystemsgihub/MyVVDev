@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.7.1
+Version: 0.8.7.2
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -47,6 +47,40 @@ GNU General Public License for more details.
 		}
 	}
 
+	function wpfastestcache_activate(){
+		if($options = get_option("WpFastestCache")){
+			$post = json_decode($options, true);
+
+			include_once('inc/admin.php');
+			$wpfc = new WpFastestCacheAdmin();
+			$wpfc->modifyHtaccess($post);
+		}
+	}
+
+	function wpfastestcache_deactivate(){
+		$wpfc = new WpFastestCache();
+
+		$path = ABSPATH;
+		
+		if($wpfc->is_subdirectory_install()){
+			$path = $wpfc->getABSPATH();
+		}
+
+		if(is_file($path.".htaccess") && is_writable($path.".htaccess")){
+			$htaccess = file_get_contents($path.".htaccess");
+			$htaccess = preg_replace("/#\s?BEGIN\s?WpFastestCache.*?#\s?END\s?WpFastestCache/s", "", $htaccess);
+			$htaccess = preg_replace("/#\s?BEGIN\s?GzipWpFastestCache.*?#\s?END\s?GzipWpFastestCache/s", "", $htaccess);
+			$htaccess = preg_replace("/#\s?BEGIN\s?LBCWpFastestCache.*?#\s?END\s?LBCWpFastestCache/s", "", $htaccess);
+			$htaccess = preg_replace("/#\s?BEGIN\s?WEBPWpFastestCache.*?#\s?END\s?WEBPWpFastestCache/s", "", $htaccess);
+			@file_put_contents($path.".htaccess", $htaccess);
+		}
+
+		$wpfc->deleteCache();
+	}
+
+	register_activation_hook( __FILE__, "wpfastestcache_activate");
+	register_deactivation_hook( __FILE__, "wpfastestcache_deactivate");
+
 	class WpFastestCache{
 		private $systemMessage = "";
 		private $options = array();
@@ -83,6 +117,13 @@ GNU General Public License for more details.
 
 
 			add_action( 'rate_post', array($this, 'wp_postratings_clear_fastest_cache'), 10, 2);
+
+
+			add_action('user_register', array($this, 'modify_htaccess_for_new_user'), 10, 1);
+			add_action('profile_update', array($this, 'modify_htaccess_for_new_user'), 10, 1);
+
+
+			add_action('edit_terms', array($this, 'delete_cache_of_term'), 10, 1);
 
 			// to check nonce is timeout or not
 			//add_action('init', array($this, "nonce_timeout"));
@@ -121,8 +162,6 @@ GNU General Public License for more details.
 
 				$this->checkCronTime();
 
-				register_activation_hook( __FILE__, array('WpFastestCache', 'activate'));
-				register_deactivation_hook( __FILE__, array('WpFastestCache', 'deactivate'));
 				register_uninstall_hook( __FILE__, array('WpFastestCache', 'uninstall'));
 
 				if($this->isPluginActive("wp-fastest-cache-premium/wpFastestCachePremium.php")){
@@ -200,9 +239,13 @@ GNU General Public License for more details.
 		public function nonce_timeout(){
 			if(!is_user_logged_in()){
 				$run = false;
-				$list = array("ninja-forms/ninja-forms.php",
+				$list = array(
+							  "caldera-forms/caldera-core.php",
+							  "contact-form-7/wp-contact-form-7.php",
+							  "js_composer/js_composer.php",
 							  "kk-star-ratings/index.php",
-							  "contact-form-7/wp-contact-form-7.php"
+							  "ninja-forms/ninja-forms.php",
+							  "yet-another-stars-rating/yet-another-stars-rating.php"
 							  );
 
 				foreach ($list as $key => $value) {
@@ -267,8 +310,8 @@ GNU General Public License for more details.
             $statics["all_warnings"] = $statics["all_warnings"] + $wpdb->query( $element );
 
             $element = "SELECT * FROM `$wpdb->options` WHERE option_name LIKE '%\_transient\_%' ;";
-            $statics["transient_options"] = $wpdb->query( $element );
-            $statics["all_warnings"] = $statics["all_warnings"] + $wpdb->query( $element );
+            $statics["transient_options"] = $wpdb->query( $element ) > 20 ? $wpdb->query( $element ) : 0;
+            $statics["all_warnings"] = $statics["all_warnings"] + $statics["transient_options"];
 
             die(json_encode($statics));
 		}
@@ -732,38 +775,8 @@ GNU General Public License for more details.
 			$wpfc->createCache();
 		}
 
-		public function activate(){
-			if($options = get_option("WpFastestCache")){
-				$post = json_decode($options, true);
-
-				include_once('inc/admin.php');
-				$wpfc = new WpFastestCacheAdmin();
-				$wpfc->modifyHtaccess($post);
-			}
-		}
-
-		public function deactivate(){
-			$wpfc = new WpFastestCache();
-			$path = ABSPATH;
-			
-			if($wpfc->is_subdirectory_install()){
-				$path = $wpfc->getABSPATH();
-			}
-
-			if(is_file($path.".htaccess") && is_writable($path.".htaccess")){
-				$htaccess = file_get_contents($path.".htaccess");
-				$htaccess = preg_replace("/#\s?BEGIN\s?WpFastestCache.*?#\s?END\s?WpFastestCache/s", "", $htaccess);
-				$htaccess = preg_replace("/#\s?BEGIN\s?GzipWpFastestCache.*?#\s?END\s?GzipWpFastestCache/s", "", $htaccess);
-				$htaccess = preg_replace("/#\s?BEGIN\s?LBCWpFastestCache.*?#\s?END\s?LBCWpFastestCache/s", "", $htaccess);
-				@file_put_contents($path.".htaccess", $htaccess);
-			}
-
-			$wpfc->deleteCache();
-		}
-
 		public function uninstall(){
-			$wpfc = new WpFastestCache();
-			$wpfc->deactivate();
+			wpfastestcache_deactivate();
 			
 			// wp_clear_scheduled_hook("wp_fastest_cache");
 			// wp_clear_scheduled_hook("wp_fastest_cache_regular");
@@ -822,6 +835,22 @@ GNU General Public License for more details.
 		// 	}
 		// }
 
+		public function deleteWidgetCache(){
+			$widget_cache_path = $this->getWpContentDir()."/cache/wpfc-widget-cache";
+			
+			if(is_dir($widget_cache_path)){
+				if(!is_dir($this->getWpContentDir()."/cache/tmpWpfc")){
+					if(@mkdir($this->getWpContentDir()."/cache/tmpWpfc", 0755, true)){
+						//tmpWpfc has been created
+					}
+				}
+
+				if(@rename($widget_cache_path, $this->getWpContentDir()."/cache/tmpWpfc/w".time())){
+					//DONE
+				}
+			}
+		}
+
 		public function on_all_status_transitions($new_status, $old_status, $post) {
 			if ( ! wp_is_post_revision($post->ID) ){
 				if(isset($this->options->wpFastestCacheNewPost) && isset($this->options->wpFastestCacheStatus)){
@@ -831,8 +860,12 @@ GNU General Public License for more details.
 								$this->deleteCache();
 							}else if($this->options->wpFastestCacheNewPost_type == "homepage"){
 								$this->deleteHomePageCache();
+
 								//to clear category cache and tag cache
 								$this->singleDeleteCache(false, $post->ID);
+
+								//to clear widget cache
+								$this->deleteWidgetCache();
 							}
 						}else{
 							$this->deleteCache();
@@ -919,19 +952,23 @@ GNU General Public License for more details.
 				$terms = $wpdb->get_results("SELECT * FROM `".$wpdb->prefix."term_relationships` WHERE `object_id`=".$post_id, ARRAY_A);
 
 				foreach ($terms as $term_key => $term_val){
-					$term = get_term($term_val["term_taxonomy_id"]);
+					$this->delete_cache_of_term($term_val["term_taxonomy_id"]);
+				}
+			}
+		}
 
-					if(preg_match("/cat|tag/", $term->taxonomy)){
-						$url = get_term_link($term->term_id, $term->taxonomy);
+		public function delete_cache_of_term($term_id){
+			$term = get_term($term_id);
 
-						if(preg_match("/^http/", $url)){
-							$path = preg_replace("/https?\:\/\/[^\/]+/i", "", $url);
-							$path = trim($path, "/");
+			if(preg_match("/cat|tag/", $term->taxonomy)){
+				$url = get_term_link($term->term_id, $term->taxonomy);
 
-							@unlink($this->getWpContentDir()."/cache/all/".$path."/index.html");
-							@unlink($this->getWpContentDir()."/cache/wpfc-mobile-cache/".$path."/index.html");
-						}
-					}
+				if(preg_match("/^http/", $url)){
+					$path = preg_replace("/https?\:\/\/[^\/]+/i", "", $url);
+					$path = trim($path, "/");
+
+					@unlink($this->getWpContentDir()."/cache/all/".$path."/index.html");
+					@unlink($this->getWpContentDir()."/cache/wpfc-mobile-cache/".$path."/index.html");
 				}
 			}
 		}
@@ -980,7 +1017,6 @@ GNU General Public License for more details.
 
 			$cache_path = $this->getWpContentDir()."/cache/all";
 			$minified_cache_path = $this->getWpContentDir()."/cache/wpfc-minified";
-			$widget_cache_path = $this->getWpContentDir()."/cache/wpfc-widget-cache";
 
 			if(class_exists("WpFcMobileCache")){
 				$wpfc_mobile = new WpFcMobileCache();
@@ -999,11 +1035,7 @@ GNU General Public License for more details.
 			}
 
 			//to clear widget cache path
-			if(is_dir($widget_cache_path)){
-				if(@rename($widget_cache_path, $this->getWpContentDir()."/cache/tmpWpfc/w".time())){
-					//DONE
-				}
-			}
+			$this->deleteWidgetCache();
 
 			if(is_dir($cache_path)){
 				if(@rename($cache_path, $this->getWpContentDir()."/cache/tmpWpfc/".time())){
@@ -1378,7 +1410,9 @@ GNU General Public License for more details.
 				}
 			}
 
-			die();
+			if(isset($_GET) && isset($_GET["type"])  && $_GET["type"] == "preload"){
+				die();
+			}
 		}
 
 		public function wpfc_remote_get($url, $user_agent){
@@ -1446,6 +1480,57 @@ GNU General Public License for more details.
 			}
 		}
 
+		public function modify_htaccess_for_new_user($user_id){
+			$path = ABSPATH;
+
+			if($this->is_subdirectory_install()){
+				$path = $this->getABSPATH();
+			}
+
+			$htaccess = @file_get_contents($path.".htaccess");
+
+			if(preg_match("/\#\s?Start_WPFC_Exclude_Admin_Cookie/", $htaccess)){
+				$rules = $this->excludeAdminCookie();
+
+				$htaccess = preg_replace("/\#\s?Start_WPFC_Exclude_Admin_Cookie[^\#]*\#\s?End_WPFC_Exclude_Admin_Cookie\s+/", $rules, $htaccess);
+			}
+
+			@file_put_contents($path.".htaccess", $htaccess);
+		}
+
+		public function excludeAdminCookie(){
+			$rules = "";
+			$users_groups = array_chunk(get_users(array("role" => "administrator", "fields" => array("user_login"))), 5);
+
+			foreach ($users_groups as $group_key => $group) {
+				$tmp_users = "";
+				$tmp_rule = "";
+
+				foreach ($group as $key => $value) {
+					if($tmp_users){
+						$tmp_users = $tmp_users."|".sanitize_user(wp_unslash($value->user_login), true);
+					}else{
+						$tmp_users = sanitize_user(wp_unslash($value->user_login), true);
+					}
+
+					// to replace spaces with \s
+					$tmp_users = preg_replace("/\s/", "\s", $tmp_users);
+
+					if(!next($group)){
+						$tmp_rule = "RewriteCond %{HTTP:Cookie} !wordpress_logged_in_[^\=]+\=".$tmp_users;
+					}
+				}
+
+				if($rules){
+					$rules = $rules."\n".$tmp_rule;
+				}else{
+					$rules = $tmp_rule;
+				}
+			}
+
+			return "# Start_WPFC_Exclude_Admin_Cookie\n".$rules."\n# End_WPFC_Exclude_Admin_Cookie\n";
+		}
+
 		public function excludeRules(){
 			$htaccess_page_rules = "";
 			$htaccess_page_useragent = "";
@@ -1457,6 +1542,9 @@ GNU General Public License for more details.
 
 					foreach ($rules_std as $key => $value) {
 						$value->type = isset($value->type) ? $value->type : "page";
+
+						// escape the chars
+						$value->content = str_replace("?", "\?", $value->content);
 
 						if($value->type == "page"){
 							if($value->prefix == "startwith"){
@@ -1524,7 +1612,7 @@ GNU General Public License for more details.
 		    return true;
 		}
 
-		protected function is_subdirectory_install(){
+		public function is_subdirectory_install(){
 			if(strlen(site_url()) > strlen(home_url())){
 				return true;
 			}
