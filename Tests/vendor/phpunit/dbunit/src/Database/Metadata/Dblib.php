@@ -48,7 +48,7 @@ class Dblib extends AbstractMetadata
     {
         $tableNames = [];
 
-        $query = 'SELECT name
+        $query = 'name
                     FROM sys.tables
                    ORDER BY name';
 
@@ -102,7 +102,7 @@ class Dblib extends AbstractMetadata
      */
     protected function loadColumnInfo($tableName)
     {
-        $query = "SELECT name
+        $query = "name
 			FROM sys.columns
 		   WHERE object_id = OBJECT_ID('" . $tableName . "')
 		   ORDER BY column_id";
@@ -113,7 +113,7 @@ class Dblib extends AbstractMetadata
             $this->columns[$tableName][] = $columnName;
         }
 
-        $keyQuery = "SELECT COL_NAME(ic.OBJECT_ID,ic.column_id) AS ColumnName
+        $keyQuery = "COL_NAME(ic.OBJECT_ID,ic.column_id) AS ColumnName
 			FROM    sys.indexes AS i INNER JOIN 
 				sys.index_columns AS ic ON  i.OBJECT_ID = ic.OBJECT_ID
 						        AND i.index_id = ic.index_id

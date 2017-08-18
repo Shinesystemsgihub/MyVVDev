@@ -549,8 +549,14 @@ function wc_terms_clauses( $clauses, $taxonomies, $args ) {
 		$clauses['orderby'] = $order;
 	}
 
-	// Grouping.
-	if ( strstr( $clauses['fields'], 'tr.object_id' ) ) {
+	// Groupingt
+	if ( strstr( $clauses['fields'], 'tr.object_id' ) && strstr( $clauses['fields'], 'tt.term_taxonomy_id' ) && strstr( $clauses['fields'], 'tm.meta_value' ) ) {
+		$clauses['orderby'] = ' GROUP BY t.term_id, tr.object_id, tm.meta_value ' . $clauses['orderby'];
+	} elseif ( strstr( $clauses['fields'], 'tr.object_id' ) && strstr( $clauses['fields'], 'tm.meta_value' ) ) {
+		$clauses['orderby'] = ' GROUP BY t.term_id, tr.object_id, tm.meta_value ' . $clauses['orderby'];
+	} elseif ( strstr( $clauses['fields'], 'tm.meta_value' ) ) {
+		$clauses['orderby'] = ' GROUP BY t.term_id, tm.meta_value ' . $clauses['orderby'];
+	} elseif ( strstr( $clauses['fields'], 'tr.object_id' ) ) {
 		$clauses['orderby'] = ' GROUP BY t.term_id, tr.object_id ' . $clauses['orderby'];
 	} else {
 		$clauses['orderby'] = ' GROUP BY t.term_id ' . $clauses['orderby'];

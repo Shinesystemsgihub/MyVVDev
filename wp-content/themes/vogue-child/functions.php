@@ -334,10 +334,11 @@ add_filter('woocommerce_is_purchasable', function ($is_purchasable, $product) {
     global $product_cart_items;
     // Service Category ID
     $category_id = 14;
-    $items = is_array($compare_cart_items) ? $compare_cart_items : [];
+    $items = is_array($compare_cart_items) ? $compare_cart_items : array();
     //All services
     $product_cart_items = get_product_ids_by_category_id($category_id);
     $intersect = @array_intersect($items, $product_cart_items);
+    // $intersect = @array_intersect($items, $product_cart_items);
     $product_unic_ids = explode(',', get_option('services_unique_ids'));
     $intersect_unic = @array_intersect($items, $product_unic_ids);
     if (!empty($items)) {
@@ -356,6 +357,9 @@ add_filter('woocommerce_is_purchasable', function ($is_purchasable, $product) {
         }
     } elseif (empty(WC()->cart->cart_contents)) {
         $is_purchasable = in_array($product->get_id(), $product_cart_items);
+    }
+    if ( !$is_purchasable ) {
+         $testing = 'This product is not purchasable';
     }
     return $is_purchasable;
 }, 20, 2);
