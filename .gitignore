@@ -1,3 +1,4 @@
 cgi-bin
 error_log
 logs
+wp-config.php
