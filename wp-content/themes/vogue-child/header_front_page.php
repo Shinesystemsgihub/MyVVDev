@@ -35,7 +35,7 @@ global $woocommerce;
 	<hr style="height: 5px; font-size: 0; line-height: 0; background-color: #4AAF3E;"> 
 	<div class="front-page-hero" >
 		<div class="front-page-content">
-			<h1 ><span style="font-weight: thin;">Groceries And Services<br/>Delivered Straight to Your Vacation</span><br/><br/></h1>  
+			<h1 ><span style="font-weight: thin;">Groceries and Valet Services<br/>Delivered to Your Vacation</span><br/><br/></h1>  
 			<form action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?> " method="post" class="form-horizontal" >
 					<fieldset style="border: none;">
 
