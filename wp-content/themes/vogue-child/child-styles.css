@@ -73,6 +73,21 @@ p.product.woocommerce.add_to_cart_inline[style] {
 
 .product_cat-services p {
     color: black !important;
+
+}
+
+.woocommerce .woocommerce-error, .woocommerce-page .woocommerce-error,
+.woocommerce .woocommerce-message, .woocommerce-page .woocommerce-message {
+    clear: right;
+}
+
+.woocommerce .woocommerce-error:before, 
+.woocommerce-page .woocommerce-error:before, 
+.woocommerce .woocommerce-message:before, 
+.woocommerce-page .woocommerce-message:before, 
+.woocommerce .woocommerce-info:before, 
+.woocommerce-page .woocommerce-info:before {
+    left: 10px;
 }
 
 /*footer shit*/
