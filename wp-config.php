@@ -22,25 +22,41 @@
 /** The name of the database for WordPress */
 define('DB_NAME', 'myvacayvalet_dev');
 
+
+
+
 /** MySQL database username */
-define('DB_USER', 'myvv');
-// define('DB_USER', 'shinesan_wp2');
-// 
+
+define('DB_USER', 'shinesan_wp2');
+
+
+
+
 /** MySQL database password */
-define('DB_PASSWORD', '8h4z95');
-// define('DB_PASSWORD', 'E[EG0gBxQL71[[3');
+
+define('DB_PASSWORD', 'E[EG0gBxQL71[[3');
+
+
+
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
-// define('DB_HOST', 'myvacayvalet.com');
 
-define('WP_ALLOW_REPAIR', true);
+define('DB_HOST', 'myvacayvalet.com');
+
+
+
 
 /** Database Charset to use in creating database tables. */
+
 define('DB_CHARSET', 'utf8mb4');
 
+
+
+
 /** The Database Collate type. Don't change this if in doubt. */
+
 define('DB_COLLATE', '');
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -84,13 +100,16 @@ $table_prefix  = 'mvvp_';
  */
 define('WP_DEBUG', false);
 
-/** defing('WP_ALLOW_REPAIR', true); */
-
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
+
+define('WP_CACHE', true); $currenthost = $_SERVER['HTTP_HOST']; $mypos = strpos($currenthost, 'localhost'); 
+	if ($mypos === false) { define('WP_HOME','http://myvvcollab.com'); define('WP_SITEURL','http://myvvcollab.com'); 
+	} else { define('WP_HOME','http://localhost'); define('WP_SITEURL','http://localhost'); 
+	}
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
