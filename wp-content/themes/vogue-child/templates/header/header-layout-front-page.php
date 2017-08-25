@@ -26,12 +26,26 @@ global $woocommerce; ?>
 		    <?php endif; ?>
 			
 		</div><!-- .site-branding -->
-	
+		
 		<nav id="site-navigation" class="main-navigation <?php echo ( get_theme_mod( 'vogue-mobile-nav-skin' ) ) ? sanitize_html_class( get_theme_mod( 'vogue-mobile-nav-skin' ) ) : sanitize_html_class( 'vogue-mobile-nav-skin-dark' ); ?>" role="navigation">
+			
 			<span class="header-menu-button"><i class="fa fa-bars"></i><span><?php echo esc_attr( get_theme_mod( 'vogue-header-menu-text', 'menu' ) ); ?></span></span>
 			<div id="main-menu" class="main-menu-container">
-				<span class="main-menu-close"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></span>
 
+				<div class="welcome-name"style="padding: 22px 20px 23px; font-family: 'Lato', sans-serif; text-transform: uppercase; color: #000000; font-size: 14px;">
+					<?php global $user_identity;
+						get_currentuserinfo();
+	
+						if ($user_identity == '') {
+						echo('Welcome Guest');
+						} else {
+						echo('Welcome ' . $user_identity);
+						}
+					?>
+				</div>
+
+				<span class="main-menu-close"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></span>
+				
 				<?php dynamic_menu(); ?>
 				
 				<?php if ( vogue_is_woocommerce_activated() ) : ?>
