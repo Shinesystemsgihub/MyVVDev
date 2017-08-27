@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: tmp/admin/tpl/admin.php:9, tmp/so-widgets-bundle.php:196
+#: tmp/admin/tpl/admin.php:9, tmp/so-widgets-bundle.php:199
 msgid "SiteOrigin Widgets Bundle"
 msgstr ""
 
@@ -69,19 +69,27 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: tmp/base/inc/actions.php:41, tmp/base/siteorigin-widget.class.php:635
+#: tmp/base/inc/actions.php:10, tmp/base/inc/actions.php:73, tmp/base/inc/actions.php:117, tmp/base/inc/actions.php:153, tmp/base/inc/actions.php:166, tmp/base/inc/actions.php:170, tmp/base/inc/actions.php:261, tmp/base/inc/actions.php:264, tmp/so-widgets-bundle.php:353, tmp/so-widgets-bundle.php:377, tmp/so-widgets-bundle.php:390, tmp/so-widgets-bundle.php:420, tmp/so-widgets-bundle.php:431, tmp/so-widgets-bundle.php:497, tmp/so-widgets-bundle.php:508
+msgid "Invalid request."
+msgstr ""
+
+#: tmp/base/inc/actions.php:12, tmp/base/inc/actions.php:20, tmp/so-widgets-bundle.php:360, tmp/so-widgets-bundle.php:503
+msgid "Invalid post."
+msgstr ""
+
+#: tmp/base/inc/actions.php:48, tmp/base/siteorigin-widget.class.php:635
 msgid "Widget Preview"
 msgstr ""
 
-#: tmp/base/inc/actions.php:204
+#: tmp/base/inc/actions.php:209
 msgid "Nonce error"
 msgstr ""
 
-#: tmp/base/inc/actions.php:214
+#: tmp/base/inc/actions.php:219
 msgid "Signature error"
 msgstr ""
 
-#: tmp/base/inc/actions.php:240
+#: tmp/base/inc/actions.php:245
 msgid "Attachment error"
 msgstr ""
 
@@ -109,7 +117,7 @@ msgstr ""
 msgid "SiteOrigin Page Builder"
 msgstr ""
 
-#: tmp/base/inc/fields/date-range.class.php:31, tmp/base/inc/fields/date-range.class.php:45, tmp/widgets/contact/contact.php:1146
+#: tmp/base/inc/fields/date-range.class.php:31, tmp/base/inc/fields/date-range.class.php:45, tmp/widgets/contact/contact.php:1150
 msgid "From"
 msgstr ""
 
@@ -533,7 +541,7 @@ msgstr ""
 msgid "SiteOrigin Widget"
 msgstr ""
 
-#: tmp/compat/visual-composer/visual-composer.php:40, tmp/so-widgets-bundle.php:425, tmp/so-widgets-bundle.php:426
+#: tmp/compat/visual-composer/visual-composer.php:40, tmp/so-widgets-bundle.php:447, tmp/so-widgets-bundle.php:448
 msgid "SiteOrigin Widgets"
 msgstr ""
 
@@ -569,27 +577,31 @@ msgstr ""
 msgid "Ionicons"
 msgstr ""
 
-#: tmp/so-widgets-bundle.php:212
+#: tmp/so-widgets-bundle.php:215
 msgid "A new widget!"
 msgstr ""
 
-#: tmp/so-widgets-bundle.php:451
+#: tmp/so-widgets-bundle.php:357, tmp/so-widgets-bundle.php:380, tmp/so-widgets-bundle.php:423
+msgid "Insufficient permissions."
+msgstr ""
+
+#: tmp/so-widgets-bundle.php:473
 msgid "%s was %s"
 msgstr ""
 
-#: tmp/so-widgets-bundle.php:453
+#: tmp/so-widgets-bundle.php:475
 msgid "Activated"
 msgstr ""
 
-#: tmp/so-widgets-bundle.php:453
+#: tmp/so-widgets-bundle.php:475
 msgid "Deactivated"
 msgstr ""
 
-#: tmp/so-widgets-bundle.php:700
+#: tmp/so-widgets-bundle.php:728
 msgid "Manage Widgets"
 msgstr ""
 
-#: tmp/so-widgets-bundle.php:701
+#: tmp/so-widgets-bundle.php:729
 msgid "Support"
 msgstr ""
 
@@ -925,7 +937,7 @@ msgstr ""
 msgid "Required Field"
 msgstr ""
 
-#: tmp/widgets/contact/contact.php:164, tmp/widgets/contact/contact.php:962
+#: tmp/widgets/contact/contact.php:164, tmp/widgets/contact/contact.php:966
 msgid "Required field"
 msgstr ""
 
@@ -1253,31 +1265,31 @@ msgstr ""
 msgid "Please write something"
 msgstr ""
 
-#: tmp/widgets/contact/contact.php:974
+#: tmp/widgets/contact/contact.php:978
 msgid "Invalid email address."
 msgstr ""
 
-#: tmp/widgets/contact/contact.php:1048
+#: tmp/widgets/contact/contact.php:1052
 msgid "Error sending email, please try again later."
 msgstr ""
 
-#: tmp/widgets/contact/contact.php:1066
+#: tmp/widgets/contact/contact.php:1070
 msgid "A valid email is required"
 msgstr ""
 
-#: tmp/widgets/contact/contact.php:1068
+#: tmp/widgets/contact/contact.php:1072
 msgid "The email address is invalid"
 msgstr ""
 
-#: tmp/widgets/contact/contact.php:1072
+#: tmp/widgets/contact/contact.php:1076
 msgid "Missing subject"
 msgstr ""
 
-#: tmp/widgets/contact/contact.php:1106
+#: tmp/widgets/contact/contact.php:1110
 msgid "Error validating your Captcha response."
 msgstr ""
 
-#: tmp/widgets/contact/contact.php:1138
+#: tmp/widgets/contact/contact.php:1142
 msgid "Unfortunately our system identified your message as spam."
 msgstr ""
 

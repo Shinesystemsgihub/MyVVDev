@@ -27,6 +27,20 @@ global $woocommerce; ?>
 					<?php endif; ?>
 					
 					<?php do_action ( 'vogue_topbar_left_right' ); ?>
+
+					<div class="welcome-name-top"style="padding: 8px 4px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; color: #000000; font-size: 11px;">
+						<div style="height: 2px;"></div>
+
+						<?php global $user_identity;
+							get_currentuserinfo();
+		
+							if ($user_identity == '') {
+							echo('Welcome Guest');
+							} else {
+							echo('Welcome ' . $user_identity);
+							}
+						?>
+					</div>
 				</div>
 				
 				<div class="site-topbar-right">
@@ -79,6 +93,7 @@ global $woocommerce; ?>
 		<nav id="site-navigation" class="main-navigation <?php echo ( get_theme_mod( 'vogue-mobile-nav-skin' ) ) ? sanitize_html_class( get_theme_mod( 'vogue-mobile-nav-skin' ) ) : sanitize_html_class( 'vogue-mobile-nav-skin-dark' ); ?>" role="navigation">
 			<span class="header-menu-button"><i class="fa fa-bars"></i><span><?php echo esc_attr( get_theme_mod( 'vogue-header-menu-text', 'menu' ) ); ?></span></span>
 			<div id="main-menu" class="main-menu-container">
+
 				<span class="main-menu-close"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></span>
 
 				<?php dynamic_menu(); ?>

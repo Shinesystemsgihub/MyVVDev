@@ -246,6 +246,8 @@ add_action( 'emp_partial' , 'dynamic_menu' );
 
 
 
+
+
 /***** Woocommerce custom functions *****/
 
 /**
