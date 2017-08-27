@@ -16,20 +16,21 @@ class UserRepository {
   public function findByEmail( $email ) {
     
     $statement = $this->pdo->prepare( "
-      SELECT 
+      select 
       u.ID as userId, 
       u.display_name as userName,
-      u.rental_id as rentalId,
-      u.zip_code as zipCode,
-      f.ID as franchiseId, 
+      v.rental_id as rentalId,
+      v.zip_code as zipCode,
+      f.id as franchiseId, 
       f.franchise_name as franchiseName, 
       f.franchise_uri as franchiseUri
-      FROM mvvp_users AS u
-        LEFT JOIN mvvp_franchises AS f ON u.zip_code = f.zip
-        WHERE u.user_email = ?
-    " );
+    from mvvp_users AS u
+    left join mvvp_reservations as v on u.ID = v.user_id
+    left join mvvp_franchises_zipcodes as z on v.zip_code = z.zip_code
+    left join mvvp_franchises as f on f.id = z.franchise_id
+  " );
 
-    $statement->execute([$email]);
+    $statement->execute( [ $email ] );
     $n = $statement->rowCount();
     $user = $statement->fetch( PDO::FETCH_ASSOC );
 
@@ -40,18 +41,19 @@ class UserRepository {
     if ( $userId < 1 ) return false;
         
     $statement = $this->pdo->prepare( "
-      SELECT 
-        u.ID as userId, 
-        u.display_name as userName,
-        u.rental_id as rentalId,
-        u.zip_code as zipCode,
-        f.ID as franchiseId, 
-        f.franchise_name as franchiseName, 
-        f.franchise_uri as franchiseUri
-      FROM mvvp_users AS u
-      LEFT JOIN mvvp_franchises_zipcodes as z ON u.zip_code = z.zip_code
-      LEFT JOIN mvvp_franchises AS f ON z.franchise_id = f.ID
-      WHERE u.ID = ?
+    select 
+      u.ID as userId, 
+      u.display_name as userName,
+      v.rental_id as rentalId,
+      v.zip_code as zipCode,
+      f.id as franchiseId, 
+      f.franchise_name as franchiseName, 
+      f.franchise_uri as franchiseUri
+    from mvvp_users AS u
+    left join mvvp_reservations as v on u.ID = v.user_id
+    left join mvvp_franchises_zipcodes as z on v.zip_code = z.zip_code
+    left join mvvp_franchises AS f on f.id = z.franchise_id
+    where u.ID = ?
     " );
 
     $statement->execute([$userId]);
@@ -61,24 +63,13 @@ class UserRepository {
     return $user;
   }
 
-  public function setUserFranchiseId( $franchiseId, $userId ) {
-    if ( $userId < 1 ) return;
-    
-    $statement = $this->pdo->prepare( "
-      UPDATE mvvp_users
-        SET franchise_id = ?
-        WHERE ID = ?
-    " );
-    $statement->execute( [ $franchiseId, $userId ] );
-  }
-
   public function setUserRentalId( $rentalId, $userId ) {
     if ( $userId < 1 ) return;
 
     $statement = $this->pdo->prepare( "
-      UPDATE mvvp_users
-        SET rental_id = ?
-        WHERE ID = ?
+      update mvvp_users
+      set rental_id = ?
+      where ID = ?
     " );
     $statement->execute( [ $rentalId, $userId ] );
   }
@@ -87,9 +78,9 @@ class UserRepository {
     if ( $userId < 1 ) return;
     
     $statement = $this->pdo->prepare( "
-      UPDATE mvvp_users
-        SET zip_code = ?
-        WHERE ID = ?
+      update mvvp_users
+      set zip_code = ?
+      where ID = ?
     " );
     $statement->execute( [ $zipcode, $userId ] );
   }

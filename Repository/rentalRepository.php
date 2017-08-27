@@ -13,7 +13,7 @@ class RentalRepository {
         DB_PASSWORD );
     }
 
-  public function findByZipcode( $zipcode ) {
+  public function listByZipcode( $zipcode ) {
     
     $statement = $this->pdo->prepare("
       select 
@@ -26,7 +26,7 @@ class RentalRepository {
       where zip_code = ? and is_active = 1
     ");
 
-    $statement->execute( [ $zipcode ]) ;
+    $statement->execute( [ $zipcode ] ) ;
     $n = $statement->rowCount();
     $rentalList = $statement->fetchAll( PDO::FETCH_NUM );
 

@@ -6,123 +6,168 @@ global $wpdb;
 
 require_once dirname( __FILE__ ) . '/../../../Repository/franchiseRepository.php';
 require_once dirname( __FILE__ ) . '/../../../Repository/rentalRepository.php';
+require_once dirname( __FILE__ ) . '/../../../Repository/reservationRepository.php';
 require_once dirname( __FILE__ ) . '/../../../Repository/userRepository.php';
+
+add_action( 'init', 'startSession', 1 );
+add_action( 'wp_logout', 'endSession' );
+add_action( 'wp_login', 'endSession' );
+
+function endSession() {
+    session_destroy ();
+}
+
+function startSession() {
+    if ( ! session_id() ) session_start();
+}
 
 function getUser() {
     $userRepository = new UserRepository;
-    $userId =  get_current_user_id();
+    $userId = get_current_user_id();
     if ( $userId < 1 ) return false;
+
     return $userRepository->findById( $userId );
 }
 
 function getUserFranchiseUri() {
-    $franchiseUri = '';
-    $user = getUser();
+    $reservationRepository = new ReservationRepository;
+    $reservations = $reservationRepository->getReservationsByUserId( get_current_user_id() );
+    $reservation = $reservations ? $reservations[ 0 ] : false; //modify if multiple reservations are allowed
     
-    if ( $user && isset( $user[ 'franchiseUri' ] ) ) {
-        $franchiseUri = $user[ 'franchiseUri' ];
-    }
-    return $franchiseUri;
+    return ( $reservation && isset( $reservation[ 'franchiseUri' ] ) )
+        ? $reservation[ 'franchiseUri' ] 
+        : false ;
 }
 
-function setUserZipcode() {
-    $safe_zipcode = intval( $_POST[ 'zipcode' ] );
+function getUserReservations() {
+    $user = getUser();
+
+    $reservationRepository = new ReservationRepository;
+
+    $reservations = $user 
+        ? $reservationRepository->getReservationsByUserId( $user[ 'userId' ] )
+        : [ $reservationRepository->getNewReservation() ];
+
+    return $reservations;
+}
+
+function validateZipcode( $zipcode )  {
+    $safe_zipcode = intval( $zipcode );
     
     if ( ! $safe_zipcode ) {
         $safe_zipcode = '';
     }
+
     if ( strlen( $safe_zipcode ) > 5 ) {
         $safe_zipcode = substr( $safe_zipcode, 0, 5 );
     }
 
-    $userId = get_current_user_id();
-    if ( $userId > 0 ) {
-        $userRepository = new UserRepository;
-        $userRepository->setUserZipcode( $safe_zipcode, $userId );
-    }
+    return $safe_zipcode;
+}
+
+function recordUnservedZipcode() {
+    $safe_zipcode = validateZipcode( $_POST[ 'zipcode' ] );
+    
+    $franchiseRepository = new FranchiseRepository();
+    $franchiseRepository->recordUnservedZipcode( $safe_zipcode );
 }
 
 function getFranchiseRentalsAsOptionsList() {
-    $user = getUser();
-    $safe_zipcode = '';
-
-    if( $user && intval( $user[ 'zipCode'] ) > 0 ) {
-        $zipcode = $user[ 'zipCode' ];
-        $safe_zipcode = intval( $zipcode );
-    }
-    else {
-        $safe_zipcode = $_GET ? intval($_GET['zipcode']) : '';
-    }
-
-    if ( ! $safe_zipcode ) {
-        $safe_zipcode = '';
-    }
-
-    if ( strlen( $safe_zipcode ) > 5 ) {
-        $safe_zipcode = substr( $safe_zipcode, 0, 5 );
-    }
     $rentalRepository = new RentalRepository;
-    $rentalsList = $rentalRepository->findByZipcode($safe_zipcode);
+    $reservationRepository = new ReservationRepository;
+    $reservations = $reservationRepository->getReservationsByUserId( get_current_user_id() );
+    $reservation = $reservations[ 0 ];
 
-    $optionsList = '';
-    foreach ($rentalsList as list($id, $rental)) {
+    $zipcode = $reservation[ 'zipCode' ];
+    if ( strlen( $zipcode ) < 1 ) {
+        $zipcode = $_GET ? $_GET['zipcode'] : '';
+    }
+
+    $safe_zipcode = validateZipcode( $zipcode );
+    
+    $rentalsList = $rentalRepository->listByZipcode( $safe_zipcode) ;
+
+    foreach ( $rentalsList as list( $id, $rental ) ) {
         echo '<option value="'.$id.'">'.$rental.'</option>';
     }
 }
 
-function redirectHome() {
-    $home_url = home_url();
-    $request_uri = $_SERVER['REQUEST_URI'];
+function updateReservation() {
+    $userId = get_current_user_id();
+    
+    if ( $userId > 0 ) {
+        $reservationRepository = new ReservationRepository;
+        $reservations = $reservationRepository->getReservationsByUserId( $userId );
+        $reservation = $reservations[ 0 ]; //Modify this to pick the desired reservation if multiple are allowed
+    
+        $_SESSION[ 'reservation' ] = $reservation;
+    }
+    else {
+        if( ! $_SESSION[ 'reservation' ] ) {
+            $reservationRepository = new ReservationRepository;
+            $_SESSION[ 'reservation' ] = $reservationRepository->getNewReservation();
+        }
+    }
+}
 
-    $uri = getUserFranchiseUri();
-    if($request_uri === '/' && $uri !== '') {
-        $success = wp_redirect( esc_url( $home_url . '/' . $uri ) );
+function redirectHome() {
+    if ( ! session_id() ) session_start();
+
+    if ( $_SERVER[ 'REQUEST_URI' ] === '/' ) {
+        updateReservation();
+        $reservation = $_SESSION[ 'reservation' ];
+
+        if ( $reservation[ 'rentalId' ] > 0 ) {
+            $uri = 'cart';
+        }
+        elseif ( $reservation[ 'franchiseId' ] > 0 ) {
+            $uri = $reservation[ 'franchiseUri' ];
+        }
+        else {
+            $uri = '';
+        }
+        $url = esc_url( home_url( '/' ) . $uri );
+        wp_safe_redirect( $url );
         exit;
     }
 }
-add_action( 'init', 'redirectHome' );
+
+add_action( 'init', 'redirectHome', 1 );
 
 function process_franchise() {
+    $userId = get_current_user_id();
+    $franchiseRepository = new FranchiseRepository;
+    $reservationRepository = new ReservationRepository;
+    $userRepository = new UserRepository;
     $uri = '';
     $user = getUser();
-    $safe_zipcode = '';
 
-    if( $user && intval( $user[ 'zipCode'] ) > 0 ) {
-        $zipcode = $user[ 'zipcode' ];
-        $safe_zipcode = intval( $zipCode );
-    }
-    else {
-        $safe_zipcode = $_POST ? intval($_POST['zipcode']) : '';
-    }
-
-    if ( ! $safe_zipcode ) {
-        $safe_zipcode = '';
-    }
-
-    if (strlen( $safe_zipcode ) > 5 ) {
-        $safe_zipcode = substr( $safe_zipcode, 0, 5 );
-    }
+    $safe_zipcode = $_POST ? validateZipcode( $_POST[ 'zipcode' ] ) : '';
 
     if( $safe_zipcode ) {
-        $franchiseRepository = new FranchiseRepository;
-        $franchise = $franchiseRepository->findByZipcode( $safe_zipcode );
-        $uri = isset( $franchise ) ? $franchise[ 'franchiseUri' ] : '';
+        $franchise = $franchiseRepository->findByZipCode( $safe_zipcode );
+
+        if ( $franchise ) {
+            $uri = $franchise[ 'franchiseUri' ];
+            if ( $uri ) {
+                $reservationRepository->setUserFranchiseId( $franchise[ 'franchiseId' ], $userId );
+                $reservationRepository->setUserZipCode( $safe_zipcode, $userId );
+            }
+        }
+        else {
+            $uri = "";
+            $franchiseRepository->recordUnservedZipcode( $safe_zipcode );
+        }
     }
-    
-    if( $user && $uri ) {
-        $userRepository = new UserRepository;
-        $userRepository->setUserFranchiseId ( $franchise[ 'franchiseId' ], $user[ 'userId' ] );
-        $userRepository->setUserZipcode( $safe_zipcode, $user[ 'userId' ] );
-    }
-    
-    $home_url = home_url(); //wp_redirect( esc_url( add_query_arg( 'variable_to_send', '1', home_url() ) ) );
+
+    $home_url = home_url( '/' ) ;
     if ( $uri ) {
-        $success = $user ? wp_safe_redirect( esc_url(  $home_url . '/' . $uri ) ) 
-                         : wp_safe_redirect( esc_url( add_query_arg( 'zipcode', $safe_zipcode, $home_url . '/' . $uri ) ) );
+        $success = $user ? wp_safe_redirect( esc_url(  $home_url . $uri ) ) 
+                         : wp_safe_redirect( esc_url( add_query_arg( 'zipcode', $safe_zipcode, $home_url . $uri ) ) );
         exit;
     }
     else {
-        $success = wp_safe_redirect( esc_url( $home_url . '/sorry-we-currently-do-not-service-this-area') );
+        $success = wp_safe_redirect( esc_url( $home_url . 'sorry-we-currently-do-not-service-this-area') );
         exit;
     }
 }
@@ -134,11 +179,11 @@ function process_luray_rental() {
     if ( $userId > 0 ) {
         $safe_rentalId = intval( $_POST['rentalSelection'] );
 
-        $userRepository = new UserRepository;
-        $userRepository->setUserRentalId( $safe_rentalId, $userId );
+        $reservationRepository = new ReservationRepository;
+        $reservationRepository->setUserRentalId( $safe_rentalId, $userId );
     }
 
-    $serviceUrl =  esc_url( home_url() . '/luray/choose-your-service' );
+    $serviceUrl =  esc_url( home_url( '/' ) . 'luray/choose-your-service' );
     $success = wp_safe_redirect( $serviceUrl ) ;
     exit;
 }
