@@ -97,6 +97,12 @@ p.product.woocommerce.add_to_cart_inline[style] {
 }
 
 /*footer shit*/
+body.page-template-full-width-unlogged .site-container.content-has-sidebar {
+    min-height: calc(100vh - 252px) !important;
+}
+body.page-template-full-width-unlogged footer {
+    height: 40px;
+}
 
 /*cart*/
 
