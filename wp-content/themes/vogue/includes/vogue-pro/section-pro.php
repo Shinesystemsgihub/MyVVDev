@@ -75,6 +75,7 @@ class Vogue_Premium_Customize_Section extends WP_Customize_Section {
 
 				<# if ( data.pro_text && data.pro_url ) { #>
 					<a href="{{ data.pro_url }}" class="button button-secondary alignright" title="Premium now only $25" target="_blank">{{ data.pro_text }}</a>
+					<div class="vogue-prem-tryout"><a href="https://demo.kairaweb.com/demo/#vogue" target="_blank">View Premium Demo &amp; Settings</a></div>
 				<# } #>
 			</h3>
 		</li>

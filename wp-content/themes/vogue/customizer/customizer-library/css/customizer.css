@@ -23,6 +23,14 @@
     background-color: #0952A9;
     color: #FFF;
 }
+.vogue-prem-tryout {
+    clear: both;
+    text-align: right;
+    font-size: 11px;
+    line-height: 11px;
+    text-decoration: none;
+    padding: 4px 0 0;
+}
 
 .kaira-upsell {
     margin-top: 20px;

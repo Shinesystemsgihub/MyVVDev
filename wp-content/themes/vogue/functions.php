@@ -4,7 +4,7 @@
  *
  * @package Vogue
  */
-define( 'VOGUE_THEME_VERSION' , '1.4.04' );
+define( 'VOGUE_THEME_VERSION' , '1.4.05' );
 
 // Get help / Premium Page
 require get_template_directory() . '/upgrade/upgrade.php';

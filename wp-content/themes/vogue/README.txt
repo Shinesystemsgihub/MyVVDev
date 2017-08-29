@@ -66,6 +66,10 @@ View the theme settings under "Appearance" -> Customize.
 
 == Changelog ==
 
+#### 1.4.05
+* Style tweaks/fixes
+Premium: Added setting to set custom Tagline font
+
 #### 1.4.04
 * Style tweaks/fixes
 * Fixed/Improved Default Slider responsiveness

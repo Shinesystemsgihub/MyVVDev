@@ -41,7 +41,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	);
 ?></p>
 
-<a href="/" id="new-order-button" class="button">New Order</a>
+<div style="max-width: 200px; float: left;">
+<a href="/" id="new-order-button" class="button" style="margin-bottom: 20px;">New Order</a>
+<p>WARNING: This will empty your shopping cart and reservation information and take you back to the home page.</p>
+</div>
+
+<div style="max-width: 200px; float: left;">
+<a href="/" id="cancel-order-button" class="button" style="margin-bottom: 20px;">Cancel Current Order</a>
+<p>WARNING: This will empty your shopping cart and reservation information and take you back to the home page. You will not receive an order finalization email.</p>
+</div>
 
 <?php
 	/**

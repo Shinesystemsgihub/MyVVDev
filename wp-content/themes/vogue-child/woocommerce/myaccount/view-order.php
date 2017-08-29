@@ -53,10 +53,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</ol>
 <?php endif; ?>
 
-<div style="margin-bottom: 50px;"><h2>Order Options</h2>
+<div style="margin-bottom: 50px;">
 
-<a id="edit-order-button" href="#" class="button" style="margin-bottom: 5px;">Edit Order</a> <!-- maybe we can make these dynamically show/hide depending on the status of the order -->
-<a id="cancel-order-button" href="#" class="button" style="margin-bottom: 5px;">Cancel Order</a> <!-- maybe we can make these dynamically show/hide depending on the status of the order -->
-<a id="finalize-order-button" href="#" class="button" style="margin-bottom: 5px;">Finalize Order</a> <!-- maybe we can make these dynamically show/hide depending on the status of the order -->
+<?php 
+
+
+
+?>
+<p>Payment has been received for this order. If you would like to cancel this order, please call us at + (844) VACAY-24.</p>
 </div>
 <?php do_action( 'woocommerce_view_order', $order_id ); ?>
