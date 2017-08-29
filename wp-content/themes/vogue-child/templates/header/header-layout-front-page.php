@@ -34,7 +34,7 @@ global $woocommerce; ?>
 
 				<div class="welcome-name"style="padding: 22px 20px 23px; font-family: 'Lato', sans-serif; text-transform: uppercase; color: #000000; font-size: 14px;">
 					<?php global $user_identity;
-						get_currentuserinfo();
+						WP_GET_CURRENT_USER();
 	
 						if ($user_identity == '') {
 						echo('Welcome Guest');

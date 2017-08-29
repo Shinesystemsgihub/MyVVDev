@@ -32,7 +32,7 @@ global $woocommerce; ?>
 						<div style="height: 2px;"></div>
 
 						<?php global $user_identity;
-							get_currentuserinfo();
+							WP_GET_CURRENT_USER();
 		
 							if ($user_identity == '') {
 							echo('Welcome Guest');
