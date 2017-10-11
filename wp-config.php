@@ -20,43 +20,22 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'myvacayvalet_dev');
-
-
-
+define('DB_NAME', 'myvacayvalet_staging');
 
 /** MySQL database username */
-
 define('DB_USER', 'shinesan_wp2');
 
-
-
-
 /** MySQL database password */
-
 define('DB_PASSWORD', 'E[EG0gBxQL71[[3');
 
-
-
-
 /** MySQL hostname */
-
-define('DB_HOST', 'myvacayvalet.com');
-
-
-
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-
 define('DB_CHARSET', 'utf8mb4');
 
-
-
-
 /** The Database Collate type. Don't change this if in doubt. */
-
 define('DB_COLLATE', '');
-
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -67,14 +46,17 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '+eb?{^BP_^5d(I#Pk@+CBs3~iSmr+ 9(~Tm@2 G-:@3)JW^xMR+7yv432^?cyLPo');
-define('SECURE_AUTH_KEY',  'd0Q&g3*tv2i[k@8:{a:WJrXRKffYc> v,#nr*5Q.K#8t3YV87D(pH6$L NsOd,-[');
-define('LOGGED_IN_KEY',    ' 6&fm9a{[%`Fp[6N!Wq:07s)mWgK-T/x!1&[MP?j]x8|MA25]2hZ7!998w,(h_(X');
-define('NONCE_KEY',        '8_vPT[k,,^CGX`y-8mzoS`*MlPR3mdq5l|tA@8F9)jS2cpN{c%M|W,*Jp`D*F`?s');
-define('AUTH_SALT',        '{mdr+HyFIzKh*.8xcCWde3QhLBMY#hbiA0Gk/)W3$!u84qi7>:oAy{DkI0AjRP1.');
-define('SECURE_AUTH_SALT', '_ZWEsYp4wu)XJJPY]vh>{JlrP-<Oitn Ek)OaQOAob.}^b)<D!i8~4VIb%WJ?g6Y');
-define('LOGGED_IN_SALT',   'J0& A8!Npbo+Y&.^n(~44x}p@<2=.>)a;.+t.NTi~#+|((7}m&cjP(/o:6+gl.aZ');
-define('NONCE_SALT',       '(eTh,J^fX9@,m3ld>K-KsEfD`|*:~0* %qW)c{[m|q>2S>0P;:Z#9y,Hss[6vt0V');
+define('AUTH_KEY',         '96JbU-Rp>F87;k37wA7)GkLS=x9mq!yRlNy7gx?k<K.<?hknX#C3ItDP>@3ycREt');
+define('SECURE_AUTH_KEY',  'uQ~LQ:<V9H( M7bag};b9awqG3#CuW#$X}Q2NO-YUpd66Z<7`/ CLGPVD7~eJ0LW');
+define('LOGGED_IN_KEY',    'bGU~]%|u_3cAklzCR=uq=h @cam5|Swb/:18)&|CW8qBB6J-1pmn]UW]LgODg}S+');
+define('NONCE_KEY',        '}u~]EdnnQvXm|6(_*7sAM9jOhj^^W/P`^kxC1M?#/`zDM<v}!!D%baAtq-2$yBU[');
+define('AUTH_SALT',        'ivBl10Bjp,43O(>[;SXU0yl@G{e&q3W[g@-J7Tm&RtH~6(@dMWt#an>y+(vEz8N9');
+define('SECURE_AUTH_SALT', '[MJU<Jh(SBS>o8zfc%(Lg+WUd8IO&gu9Tl}?kJZQF7%~P[VFw(PsNqe$=KW#;<sI');
+define('LOGGED_IN_SALT',   'p5Bsn$?`MJ+p?vD@uO@r0BP}($LAAIrs&Xk36O~Kkv;xshyN(5.),U).+${S^rG[');
+define('NONCE_SALT',       '5fgfHq}[3ze9`4KwC,!Uu%EEnO^Y$;S#O]$<9mgrLm>vac.0I!=RvvZvWbJ+Xza{');
+define( 'WP_MEMORY_LIMIT', '256M' );
+define( 'WP_POST_REVISIONS', 5 );
+
 
 /**#@-*/
 
@@ -105,11 +87,6 @@ define('WP_DEBUG', true);
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-
-define('WP_CACHE', true); $currenthost = $_SERVER['HTTP_HOST']; $mypos = strpos($currenthost, 'localhost'); 
-	if ($mypos === false) { define('WP_HOME','http://myvvcollab.com'); define('WP_SITEURL','http://myvvcollab.com'); 
-	} else { define('WP_HOME','http://localhost'); define('WP_SITEURL','http://localhost'); 
-	}
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

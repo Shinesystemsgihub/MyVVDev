@@ -124,7 +124,7 @@ function redirectHome() {
             $uri = $reservation[ 'franchiseUri' ];
         }
         else {
-            $uri = '';
+            return;
         }
         $url = esc_url( home_url( '/' ) . $uri );
         wp_safe_redirect( $url );
